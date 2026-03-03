@@ -1,0 +1,12 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+User-agent: *
+Allow: /
+
+{% if site.url and site.url != "" -%}
+Sitemap: {{ site.url }}/sitemap.xml
+Host: {{ site.url | replace("https://","") | replace("http://","") }}
+{% else -%}
+{%- endif %}

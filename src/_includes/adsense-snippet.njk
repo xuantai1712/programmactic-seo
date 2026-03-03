@@ -1,0 +1,14 @@
+{% if site.adsense.client and site.adsense.slot %}
+<div class="adsense" style="margin:24px 0;text-align:center">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ site.adsense.client }}"
+       data-ad-slot="{{ site.adsense.slot }}"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% else %}
+{% endif %}

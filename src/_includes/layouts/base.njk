@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ title or page.fileSlug | escape }}</title>
+  {% set canonical = (site.url and (site.url + page.url)) or page.url %}
+  <link rel="canonical" href="{{ canonical }}" />
+  {% if description %}<meta name="description" content="{{ description | escape }}" />{% endif %}
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="{{ title | escape }}" />
+  {% if description %}<meta property="og:description" content="{{ description | escape }}" />{% endif %}
+  <meta property="og:url" content="{{ canonical }}" />
+  <meta property="og:site_name" content="{{ site.name | escape }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ title | escape }}" />
+  {% if description %}<meta name="twitter:description" content="{{ description | escape }}" />{% endif %}
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;line-height:1.6;margin:0;color:#111}
+    .container{max-width:900px;margin:0 auto;padding:24px}
+    a{text-decoration:none;color:#0b62d6}
+    header,footer{padding:16px 0}
+    article{padding-bottom:32px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/"><strong>{{ site.name }}</strong></a>
+    </header>
+    <article>
+      {{ content | injectMonetization | safe }}
+    </article>
+    <footer>
+      <p>&copy; {{ "now" | date("yyyy") }} {{ site.name }}</p>
+    </footer>
+  </div>
+</body>
+</html>

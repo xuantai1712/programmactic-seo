@@ -1,0 +1,35 @@
+---
+layout: layouts/base.njk
+pagination:
+  data: collections.articles
+  size: 10
+  alias: items
+  reverse: true
+permalink: "{% if pagination.pageNumber > 0 %}/page/{{ pagination.pageNumber + 1 }}/{% else %}/{% endif %}"
+title: Trang chủ
+description: Danh sách bài viết mới nhất
+---
+<h1>Bài viết mới</h1>
+{% if items and items.length %}
+<ul>
+  {% for item in items %}
+    <li>
+      <a href="{{ item.url }}">{{ item.data.title or item.fileSlug }}</a>
+      {% if item.date %}<small>— {{ item.date | date("yyyy-MM-dd") }}</small>{% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+{% else %}
+<p>Chưa có bài viết.</p>
+{% endif %}
+
+{% if pagination.href.next or pagination.href.previous %}
+<nav aria-label="Pagination">
+  {% if pagination.href.previous %}
+  <a href="{{ pagination.href.previous }}">&laquo; Trang trước</a>
+  {% endif %}
+  {% if pagination.href.next %}
+  <a style="float:right" href="{{ pagination.href.next }}">Trang sau &raquo;</a>
+  {% endif %}
+</nav>
+{% endif %}

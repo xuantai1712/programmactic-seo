@@ -1,0 +1,10 @@
+<section class="affiliate-block" style="border:1px solid #e5e7eb;padding:16px;margin:16px 0;background:#fafafa">
+  <strong>Gợi ý:</strong> Khám phá ưu đãi liên kết của chúng tôi.
+  {% if site.affiliate.baseUrl %}
+  <a href="{{ site.affiliate.baseUrl }}{% if site.affiliate.defaultCode %}?ref={{ site.affiliate.defaultCode }}{% endif %}" rel="nofollow sponsored" target="_blank">
+    Truy cập ngay
+  </a>
+  {% else %}
+  <em>Đặt SITE_URL và AFFILIATE_BASE_URL để kích hoạt liên kết.</em>
+  {% endif %}
+</section>
