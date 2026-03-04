@@ -9,13 +9,17 @@
   },
   "scripts": {
     "generate": "node scripts/generate.js",
+    "generate:preview": "cross-env PREVIEW=true node scripts/generate.js",
     "build": "npx @11ty/eleventy",
+    "build:preview": "cross-env PREVIEW=true npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
+    "serve:preview": "cross-env PREVIEW=true npx @11ty/eleventy --serve",
     "clean": "node -e \"import('fs').then(fs=>fs.promises.rm('_site',{recursive:true,force:true}))\""
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
     "csv-parse": "^5.5.2",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "cross-env": "^7.0.3"
   }
 }

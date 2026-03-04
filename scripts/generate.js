@@ -225,6 +225,10 @@ async function processRecord(rec, rateDelayMs) {
 
 async function run() {
   await ensureDirs();
+  if (process.env.PREVIEW === "true") {
+    logLine("Preview mode: skipping content generation");
+    return;
+  }
   const rows = await readCSV(CSV_PATH);
 
   const rateMs = Number(process.env.RATE_DELAY_MS || 1200);

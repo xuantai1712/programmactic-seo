@@ -77,8 +77,11 @@ module.exports = function (eleventyConfig) {
     return content;
   });
 
-  if (!process.env.SITE_URL || !process.env.SITE_URL.trim()) {
-    throw new Error("Missing required env: SITE_URL");
+  const PREVIEW = process.env.PREVIEW === "true";
+  if (!PREVIEW) {
+    if (!process.env.SITE_URL || !process.env.SITE_URL.trim()) {
+      throw new Error("Missing required env: SITE_URL");
+    }
   }
 
   return {
