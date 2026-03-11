@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+permalink: "/"
+title: Trang chủ
+description: Danh sách bài viết mới nhất
+---
+<h1>Bài viết mới</h1>
+{% set items = collections.articles or [] %}
+{% if items.length %}
+<ul>
+  {% for item in items | reverse %}
+    <li>
+      <a href="{{ item.url }}">{{ item.data.title or item.fileSlug }}</a>
+      {% if item.date %}<small>— {{ item.date | date("yyyy-MM-dd") }}</small>{% endif %}
+    </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>Chưa có bài viết.</p>
+{% endif %}
+
+{% if site.preview %}
+<section style="margin-top:24px;padding:16px;border:1px solid #e5e7eb;background:#fafafa">
+  <strong>Chế độ xem thử:</strong> Hệ thống đang chạy PREVIEW, chưa tạo nội dung.
+  <div>Thêm từ khóa vào <code>keyword.csv</code> và chạy tạo nội dung khi tắt PREVIEW.</div>
+  <div>Lệnh thật: <code>npm run generate && npm run build</code></div>
+</section>
+{% endif %}
