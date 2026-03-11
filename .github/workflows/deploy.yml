@@ -33,8 +33,8 @@ jobs:
       - name: Generate content
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
-          SITE_URL: ${{ vars.SITE_URL }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+          SITE_URL: ${{ vars.SITE_URL || 'https://aiopsbridge.com' }}
           AFFILIATE_BASE_URL: ${{ vars.AFFILIATE_BASE_URL }}
           AFFILIATE_CODE: ${{ vars.AFFILIATE_CODE }}
           ADSENSE_CLIENT: ${{ vars.ADSENSE_CLIENT }}
