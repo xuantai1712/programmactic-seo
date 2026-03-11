@@ -39,6 +39,7 @@ jobs:
           AFFILIATE_CODE: ${{ vars.AFFILIATE_CODE }}
           ADSENSE_CLIENT: ${{ vars.ADSENSE_CLIENT }}
           ADSENSE_SLOT: ${{ vars.ADSENSE_SLOT }}
+          GOOGLE_SITE_VERIFICATION: ${{ vars.GOOGLE_SITE_VERIFICATION }}
         run: npm run generate
 
       - name: Build Eleventy

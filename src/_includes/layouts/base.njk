@@ -7,6 +7,7 @@
   {% set canonical = (site.url and (site.url + page.url)) or page.url %}
   <link rel="canonical" href="{{ canonical }}" />
   {% if description %}<meta name="description" content="{{ description | escape }}" />{% endif %}
+  {% if site.googleVerification %}<meta name="google-site-verification" content="{{ site.googleVerification }}" />{% endif %}
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ title | escape }}" />
   {% if description %}<meta property="og:description" content="{{ description | escape }}" />{% endif %}

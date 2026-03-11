@@ -1,6 +1,7 @@
 module.exports = {
   name: "Anonymous Programmatic SEO",
   url: process.env.SITE_URL || "",
+  googleVerification: process.env.GOOGLE_SITE_VERIFICATION || "",
   preview: process.env.PREVIEW === "true",
   affiliate: {
     baseUrl: process.env.AFFILIATE_BASE_URL || "",
