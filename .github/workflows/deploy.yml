@@ -17,8 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      PREVIEW: "true"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,7 +30,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Generate content (preview-safe)
+      - name: Generate content
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
@@ -41,10 +39,10 @@ jobs:
           AFFILIATE_CODE: ${{ vars.AFFILIATE_CODE }}
           ADSENSE_CLIENT: ${{ vars.ADSENSE_CLIENT }}
           ADSENSE_SLOT: ${{ vars.ADSENSE_SLOT }}
-        run: npm run generate:preview
+        run: npm run generate
 
-      - name: Build Eleventy (preview-safe)
-        run: npm run build:preview
+      - name: Build Eleventy
+        run: npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
