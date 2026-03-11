@@ -2,5 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://aiopsbridge.com/sitemap.xml
-Host: aiopsbridge.com
-
