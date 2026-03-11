@@ -6,7 +6,9 @@ const path = require("path");
 const { parse } = require("csv-parse/sync");
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "";
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
 const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
 const ROOT = path.resolve(__dirname, "..");
 const PROJECT_ROOT = path.resolve(__dirname, "..", "");
 const CSV_PATH = path.join(PROJECT_ROOT, "keyword.csv");
@@ -161,6 +163,33 @@ function toFrontMatter(data, body) {
   return fm;
 }
 
+async function geminiChatJSON(systemPrompt, userPrompt) {
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
+  const body = {
+    contents: [
+      {
+        role: "user",
+        parts: [{ text: systemPrompt + "\n\n" + userPrompt }]
+      }
+    ],
+    generationConfig: {
+      temperature: 0.7
+    }
+  };
+  const res = await fetch(url, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    const text = await res.text().catch(() => "");
+    throw new Error(`Gemini error ${res.status}: ${text}`);
+  }
+  const data = await res.json();
+  const content = data.candidates?.[0]?.content?.parts?.[0]?.text || "";
+  return content;
+}
+
 async function processRecord(rec, rateDelayMs) {
   const slug = slugify(rec.keyword);
   const outFile = path.join(OUT_DIR, `${slug}.md`);
@@ -187,25 +216,30 @@ async function processRecord(rec, rateDelayMs) {
     }
   }
 
-  if (!OPENAI_API_KEY) {
-    throw new Error("Missing required env: OPENAI_API_KEY");
+  if (!OPENAI_API_KEY && !GEMINI_API_KEY) {
+    throw new Error("Missing required env: OPENAI_API_KEY or GEMINI_API_KEY");
   }
 
   const { system, user } = buildPrompt(rec);
-  const content = await callWithRetry(
-    () => openaiChatJSON(system, user),
-    3,
-    1500
-  );
+  let content;
+
+  if (GEMINI_API_KEY) {
+    logLine(`Generating with Gemini: ${rec.keyword}`);
+    content = await callWithRetry(() => geminiChatJSON(system, user), 3, 2000);
+  } else {
+    logLine(`Generating with OpenAI: ${rec.keyword}`);
+    content = await callWithRetry(() => openaiChatJSON(system, user), 3, 1500);
+  }
   let data;
   try {
-    data = JSON.parse(content);
+    const cleaned = content.replace(/```json\s?|```/g, "").trim();
+    data = JSON.parse(cleaned);
   } catch {
-    const match = content.match(/\{[\s\S]*\}$/);
+    const match = content.match(/\{[\s\S]*\}/);
     if (match) {
       data = JSON.parse(match[0]);
     } else {
-      throw new Error("OpenAI response is not valid JSON");
+      throw new Error("AI response is not valid JSON");
     }
   }
   const title = String(data.title || rec.keyword).trim();

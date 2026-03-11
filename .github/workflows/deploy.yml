@@ -33,7 +33,9 @@ jobs:
       - name: Generate content
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o-mini' }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-1.5-flash' }}
           SITE_URL: ${{ vars.SITE_URL || 'https://aiopsbridge.com' }}
           AFFILIATE_BASE_URL: ${{ vars.AFFILIATE_BASE_URL }}
           AFFILIATE_CODE: ${{ vars.AFFILIATE_CODE }}

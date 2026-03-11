@@ -19,6 +19,20 @@ description: Danh sách bài viết mới nhất
 <p>Chưa có bài viết.</p>
 {% endif %}
 
+{% if site.adsense.client and site.adsense.slot %}
+<div class="adsense" style="margin:24px 0;text-align:center">
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="{{ site.adsense.client }}"
+       data-ad-slot="{{ site.adsense.slot }}"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
+{% endif %}
+
 {% if site.preview %}
 <section style="margin-top:24px;padding:16px;border:1px solid #e5e7eb;background:#fafafa">
   <strong>Chế độ xem thử:</strong> Hệ thống đang chạy PREVIEW, chưa tạo nội dung.
