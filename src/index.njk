@@ -4,7 +4,7 @@ pagination:
   data: languages
   size: 1
   alias: lang
-permalink: "/{{ lang }}/{{ 'trang-' + (pagination.pageNumber + 1) if pagination.pageNumber > 0 else '' }}/index.html"
+permalink: "/{{ lang }}/index.html"
 languages:
   - vi
   - en
@@ -178,10 +178,9 @@ eleventyComputed:
     {# Phân trang thực tế #}
     {% set all_articles = collections.articles | filterByLang(lang) | reverse %}
     {% set items_per_page = 12 %}
-    {% set offset = pagination.pageNumber * items_per_page %}
-    {% set paged_items = all_articles.slice(offset, offset + items_per_page) %}
-
-    {% for item in paged_items %}
+    
+    {% for item in all_articles %}
+      {% if loop.index0 < items_per_page %}
       <a href="{{ item.url }}" class="card">
         <img src="{{ item.data.image or 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80' }}" alt="{{ item.data.title }}" class="card-image" loading="lazy">
         <div class="card-content">
@@ -197,30 +196,9 @@ eleventyComputed:
           </div>
         </div>
       </a>
+      {% endif %}
     {% endfor %}
   </div>
 
-  {# Pagination Nav #}
-  {% set total_pages = (all_articles.length / items_per_page) | round(0, "ceil") %}
-  {% if total_pages > 1 %}
-  <nav class="pagination-nav">
-    {% if pagination.pageNumber > 0 %}
-      <a href="/{{ lang }}/{{ 'trang-' + pagination.pageNumber + '/' if pagination.pageNumber > 1 else '' }}" class="pagination-link">
-        &larr; {{ 'Trước' if lang == 'vi' else 'Prev' }}
-      </a>
-    {% endif %}
-
-    {% for i in range(0, total_pages) %}
-      <a href="/{{ lang }}/{{ 'trang-' + (i + 1) + '/' if i > 0 else '' }}" class="pagination-link {{ 'active' if i == pagination.pageNumber }}">
-        {{ i + 1 }}
-      </a>
-    {% endfor %}
-
-    {% if pagination.pageNumber < total_pages - 1 %}
-      <a href="/{{ lang }}/trang-{{ pagination.pageNumber + 2 }}/" class="pagination-link">
-        {{ 'Sau' if lang == 'vi' else 'Next' }} &rarr;
-      </a>
-    {% endif %}
-  </nav>
-  {% endif %}
+  {# Bỏ Pagination Nav tạm thời vì pSEO đơn giản không cần phân trang phức tạp #}
 </section>

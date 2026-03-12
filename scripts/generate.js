@@ -181,8 +181,36 @@ function injectAffiliatePlaceholder(markdown) {
 }
 
 function toFrontMatter(data, body, lang) {
-  // Sử dụng source.unsplash.com cho URL hình ảnh ngẫu nhiên theo chủ đề ổn định hơn
-  const imageUrl = `https://source.unsplash.com/featured/800x600?technology,ai,data,${Math.random().toString(36).substring(7)}`;
+  // Pool of high-quality tech/AI Unsplash photo IDs
+  const techImages = [
+    "1518770660439-4636190af475", // Circuits
+    "1550751827-4bd374c3f58b", // Cyber
+    "1451187580459-43490279c0fa", // Digital globe
+    "1519389950473-47ba0277781c", // Team tech
+    "1531297484001-80022131f5a1", // Server/AI
+    "1504384308090-c89eec2488e1", // Workspace
+    "1488590528505-98d2b5aba04b", // Tech
+    "1581091226825-a6a2a5aee158", // Robot arm
+    "1517077304055-6e89a382899b", // Code
+    "1551288049-bbbda595c7a8", // Data chart
+    "1635070041078-e363dbe005cb", // Abstract AI
+    "1620712943543-bcc4688e7485", // AI Brain
+    "1677442136019-21780ecad995", // ChatGPT/AI
+    "1460925895917-afdab827c52f", // Analytics
+    "1523961131990-5ea7c61b2107"  // Big Data
+  ];
+  
+  // Dùng slug để tạo seed cho random, giúp ảnh ổn định không đổi mỗi lần build lại
+  const slug = data.slug || "";
+  let hash = 0;
+  for (let i = 0; i < slug.length; i++) {
+    hash = (hash << 5) - hash + slug.charCodeAt(i);
+    hash |= 0;
+  }
+  const index = Math.abs(hash) % techImages.length;
+  const photoId = techImages[index];
+  const imageUrl = `https://images.unsplash.com/photo-${photoId}?auto=format&fit=crop&w=800&q=80`;
+  
   const fm = [
     "---",
     `title: "${(data.title || "").replace(/\"/g, '\\"')}"`,
