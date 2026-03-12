@@ -1,16 +1,14 @@
 ---
 layout: layouts/base.njk
 pagination:
-  data: languages
+  data: collections.pagedArticles
   size: 1
-  alias: lang
-permalink: "/{{ lang }}/index.html"
-languages:
-  - vi
-  - en
+  alias: paged
+permalink: "/{{ paged.lang }}/{% if paged.pageNumber > 0 %}trang-{{ paged.pageNumber + 1 }}/{% endif %}index.html"
 eleventyComputed:
-  title: "{{ 'Trang chủ' if lang == 'vi' else 'Home' }} - {{ pagination.pageNumber + 1 }}"
-  description: "{{ 'Danh sách bài viết mới nhất về công nghệ AiOps' if lang == 'vi' else 'Latest articles about AiOps technology' }}"
+  lang: "{{ paged.lang }}"
+  title: "{{ 'Trang chủ' if paged.lang == 'vi' else 'Home' }} - {{ paged.pageNumber + 1 }}"
+  description: "{{ 'Danh sách bài viết mới nhất về công nghệ AiOps' if paged.lang == 'vi' else 'Latest articles about AiOps technology' }}"
 ---
 
 <style>
@@ -161,28 +159,21 @@ eleventyComputed:
   }
 </style>
 
-{% if pagination.pageNumber == 0 %}
+{% if paged.pageNumber == 0 %}
 <div class="hero">
-  <h1>{{ 'Cầu nối AiOps' if lang == 'vi' else 'AiOps Bridge' }}</h1>
-  <p>{{ 'Kiến thức chuyên sâu và giải pháp tối ưu cho vận hành hệ thống thông minh.' if lang == 'vi' else 'In-depth knowledge and optimal solutions for smart system operations.' }}</p>
+  <h1>{{ 'Cầu nối AiOps' if paged.lang == 'vi' else 'AiOps Bridge' }}</h1>
+  <p>{{ 'Kiến thức chuyên sâu và giải pháp tối ưu cho vận hành hệ thống thông minh.' if paged.lang == 'vi' else 'In-depth knowledge and optimal solutions for smart system operations.' }}</p>
 </div>
 {% endif %}
 
 <section>
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
-    <h2 style="margin: 0;">{{ 'Bài viết mới nhất' if lang == 'vi' else 'Latest Articles' }}</h2>
-    <span style="color: var(--text-muted); font-size: 0.875rem;">{{ collections.articles | filterByLang(lang) | length }} {{ 'bài viết' if lang == 'vi' else 'articles' }}</span>
+    <h2 style="margin: 0;">{{ 'Bài viết mới nhất' if paged.lang == 'vi' else 'Latest Articles' }}</h2>
+    <span style="color: var(--text-muted); font-size: 0.875rem;">{{ paged.items.length }} {{ 'bài viết trên trang này' if paged.lang == 'vi' else 'articles on this page' }}</span>
   </div>
 
   <div class="grid">
-    {# Phân trang thực tế #}
-    {% set all_articles = collections.articles | filterByLang(lang) | reverse %}
-    {% set items_per_page = 12 %}
-    {% set total_pages = (all_articles.length / items_per_page) | round(0, "ceil") %}
-    {% set offset = pagination.pageNumber * items_per_page %}
-    {% set paged_items = all_articles.slice(offset, offset + items_per_page) %}
-
-    {% for item in paged_items %}
+    {% for item in paged.items %}
       <a href="{{ item.url }}" class="card">
         <img src="{{ item.data.image or 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80' }}" 
              alt="{{ item.data.title }}" 
@@ -196,7 +187,7 @@ eleventyComputed:
           <div class="card-footer">
             <span>{{ item.date | date("yyyy-MM-dd") }}</span>
             <span class="read-more">
-              {{ 'Xem thêm' if lang == 'vi' else 'Read more' }}
+              {{ 'Xem thêm' if paged.lang == 'vi' else 'Read more' }}
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </span>
           </div>
@@ -206,23 +197,23 @@ eleventyComputed:
   </div>
 
   {# Pagination Nav #}
-  {% if total_pages > 1 %}
+  {% if paged.totalPages > 1 %}
   <nav class="pagination-nav">
-    {% if pagination.pageNumber > 0 %}
-      <a href="/{{ lang }}/{% if pagination.pageNumber > 1 %}trang-{{ pagination.pageNumber }}/{% endif %}index.html" class="pagination-link">
-        &larr; {{ 'Trước' if lang == 'vi' else 'Prev' }}
+    {% if paged.pageNumber > 0 %}
+      <a href="/{{ paged.lang }}/{% if paged.pageNumber > 1 %}trang-{{ paged.pageNumber }}/{% endif %}index.html" class="pagination-link">
+        &larr; {{ 'Trước' if paged.lang == 'vi' else 'Prev' }}
       </a>
     {% endif %}
 
-    {% for i in range(0, total_pages) %}
-      <a href="/{{ lang }}/{% if i > 0 %}trang-{{ i + 1 }}/{% endif %}index.html" class="pagination-link {{ 'active' if i == pagination.pageNumber }}">
+    {% for i in range(0, paged.totalPages) %}
+      <a href="/{{ paged.lang }}/{% if i > 0 %}trang-{{ i + 1 }}/{% endif %}index.html" class="pagination-link {{ 'active' if i == paged.pageNumber }}">
         {{ i + 1 }}
       </a>
     {% endfor %}
 
-    {% if pagination.pageNumber < total_pages - 1 %}
-      <a href="/{{ lang }}/trang-{{ pagination.pageNumber + 2 }}/index.html" class="pagination-link">
-        {{ 'Sau' if lang == 'vi' else 'Next' }} &rarr;
+    {% if paged.pageNumber < paged.totalPages - 1 %}
+      <a href="/{{ paged.lang }}/trang-{{ paged.pageNumber + 2 }}/index.html" class="pagination-link">
+        {{ 'Sau' if paged.lang == 'vi' else 'Next' }} &rarr;
       </a>
     {% endif %}
   </nav>

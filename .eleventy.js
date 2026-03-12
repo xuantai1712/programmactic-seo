@@ -68,8 +68,27 @@ module.exports = function (eleventyConfig) {
     return collection.filter((item) => item.data.lang === lang);
   });
 
-  eleventyConfig.addCollection("articles", (collectionApi) => {
-    return collectionApi.getFilteredByGlob("src/pages/**/*.md");
+  eleventyConfig.addCollection("pagedArticles", (collectionApi) => {
+    const allArticles = collectionApi.getFilteredByGlob("src/pages/**/*.md").reverse();
+    const itemsPerPage = 12;
+    const languages = ["vi", "en"];
+    const paged = [];
+
+    languages.forEach((lang) => {
+      const langArticles = allArticles.filter((item) => item.data.lang === lang);
+      const totalPages = Math.ceil(langArticles.length / itemsPerPage);
+
+      for (let i = 0; i < totalPages; i++) {
+        paged.push({
+          lang,
+          pageNumber: i,
+          totalPages,
+          items: langArticles.slice(i * itemsPerPage, (i + 1) * itemsPerPage),
+        });
+      }
+    });
+
+    return paged;
   });
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
