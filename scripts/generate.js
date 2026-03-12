@@ -181,8 +181,8 @@ function injectAffiliatePlaceholder(markdown) {
 }
 
 function toFrontMatter(data, body, lang) {
-  const imageId = Math.floor(Math.random() * 1000);
-  const imageUrl = `https://images.unsplash.com/photo-${1600000000000 + imageId}?auto=format&fit=crop&w=800&q=80`;
+  // Sử dụng source.unsplash.com cho URL hình ảnh ngẫu nhiên theo chủ đề ổn định hơn
+  const imageUrl = `https://source.unsplash.com/featured/800x600?technology,ai,data,${Math.random().toString(36).substring(7)}`;
   const fm = [
     "---",
     `title: "${(data.title || "").replace(/\"/g, '\\"')}"`,

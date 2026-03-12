@@ -2,11 +2,11 @@
 title: "Cầu Nối AIOps: Tối Ưu Hóa Vận Hành IT, Đẩy Nhanh Chuyển Đổi Số Cho Doanh Nghiệp"
 description: "Khám phá cách AIOps tạo cầu nối giữa dữ liệu và hành động, tự động hóa vận hành IT, giảm sự cố, tăng hiệu suất và đẩy nhanh chuyển đổi số cho doanh nghiệp."
 tags: ['articles']
-date: 2026-03-12T15:17:58.165Z
+date: 2026-03-12T15:23:02.681Z
 permalink: "/vi/aiops-bridge-for-enterprise/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000441?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,ajh69x"
 ---
 
 ## Giới Thiệu: Đối Mặt Với Sự Phức Tạp Của Vận Hành IT Hiện Đại

@@ -2,11 +2,11 @@
 title: "AI-powered Infrastructure as Code: Nâng Tầm Quản Lý Hạ Tầng Hiện Đại"
 description: "Khám phá cách AI-powered Infrastructure as Code tự động hóa, tối ưu hóa và tăng cường bảo mật hạ tầng. Giảm thiểu lỗi, tăng hiệu quả và đẩy nhanh triển khai."
 tags: ['articles']
-date: 2026-03-12T15:17:54.062Z
+date: 2026-03-12T15:23:08.405Z
 permalink: "/vi/ai-powered-infrastructure-as-code/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000986?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,2vixu"
 ---
 
 <h1>AI-powered Infrastructure as Code: Nâng Tầm Quản Lý Hạ Tầng Hiện Đại</h1>

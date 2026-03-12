@@ -2,11 +2,11 @@
 title: "Quản Lý Đội Xe Thông Minh Với Trí Tuệ Nhân Tạo: Tối Ưu Hóa Vận Hành Và Hiệu Suất"
 description: "Khám phá cách AI đang cách mạng hóa quản lý đội xe: tối ưu hóa tuyến đường, bảo trì dự đoán, nâng cao hiệu quả vận hành và an toàn. Giải pháp thông minh cho đội xe hiện đại."
 tags: ['articles']
-date: 2026-03-12T15:18:39.603Z
+date: 2026-03-12T15:23:14.025Z
 permalink: "/vi/ai-driven-fleet-management/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000271?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,98urhk"
 ---
 
 <h1>Quản Lý Đội Xe Thông Minh Với Trí Tuệ Nhân Tạo: Tối Ưu Hóa Vận Hành Và Hiệu Suất</h1>

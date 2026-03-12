@@ -2,11 +2,11 @@
 title: "Tối Ưu Hóa Hỗ Trợ IT Chủ Động với AIOps: Hướng Dẫn Toàn Diện"
 description: "Khám phá cách AIOps giúp đội ngũ IT chủ động phát hiện, dự đoán và giải quyết sự cố, nâng cao hiệu suất hoạt động và trải nghiệm người dùng. Hướng dẫn chi tiết."
 tags: ['articles']
-date: 2026-03-12T15:17:54.061Z
+date: 2026-03-12T15:23:08.404Z
 permalink: "/vi/proactive-it-support-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000205?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,sn6ja"
 ---
 
 <h2>Giới Thiệu: Chuyển Đổi Từ Phản Ứng Sang Chủ Động trong Hỗ Trợ IT</h2>

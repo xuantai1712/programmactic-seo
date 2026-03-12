@@ -2,11 +2,11 @@
 title: "AIOps và Quản lý Đám mây Lai: Tối ưu hóa Hiệu suất và Độ tin cậy"
 description: "Khám phá cách AIOps chuyển đổi việc quản lý đám mây lai phức tạp. Tối ưu hiệu suất, phát hiện sự cố chủ động và nâng cao độ tin cậy cho hạ tầng của bạn."
 tags: ['articles']
-date: 2026-03-12T15:17:58.176Z
+date: 2026-03-12T15:23:02.690Z
 permalink: "/vi/aiops-for-hybrid-cloud-management/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000669?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,oz450s"
 ---
 
 ## Giới thiệu: Chinh phục Sự phức tạp của Đám mây Lai với AIOps

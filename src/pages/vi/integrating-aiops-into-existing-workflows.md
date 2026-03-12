@@ -2,11 +2,11 @@
 title: "Hướng Dẫn Tích Hợp AIOps Vào Quy Trình DevOps Hiện Có Một Cách Hiệu Quả"
 description: "Khám phá chiến lược từng bước để tích hợp AIOps vào quy trình DevOps hiện tại. Nâng cao khả năng quan sát, tự động hóa và tối ưu hóa vận hành IT với hướng dẫn chuyên sâu này."
 tags: ['articles']
-date: 2026-03-12T15:17:58.179Z
+date: 2026-03-12T15:23:02.693Z
 permalink: "/vi/integrating-aiops-into-existing-workflows/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000331?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,9e1l3t"
 ---
 
 ## Giới Thiệu: Tối Ưu Hóa Vận Hành IT Với AIOps

@@ -2,11 +2,11 @@
 title: "Nâng Tầm DevSecOps: Tối Ưu Hóa Bảo Mật và Vận Hành Với Sức Mạnh của AIOps"
 description: "Tìm hiểu cách AIOps cách mạng hóa DevSecOps, giúp doanh nghiệp chủ động phát hiện, phản ứng nhanh với rủi ro bảo mật và tối ưu hóa vận hành liên tục. Nâng cao hiệu quả bảo mật toàn diện."
 tags: ['articles']
-date: 2026-03-12T15:18:57.200Z
+date: 2026-03-12T15:23:19.860Z
 permalink: "/vi/improving-devsecops-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000263?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,npag4k"
 ---
 
 ## Giới Thiệu: Kỷ Nguyên Mới của Bảo Mật và Vận Hành

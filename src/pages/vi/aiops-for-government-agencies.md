@@ -2,11 +2,11 @@
 title: "AIOps cho Cơ Quan Chính Phủ: Tối Ưu Hóa Vận Hành và Nâng Cao Dịch Vụ Công"
 description: "Khám phá cách AIOps giúp các cơ quan chính phủ hiện đại hóa quản lý CNTT, tăng cường an ninh, cải thiện hiệu quả vận hành và nâng cao chất lượng dịch vụ công. Tìm hiểu lợi ích và thách thức."
 tags: ['articles']
-date: 2026-03-12T15:17:54.054Z
+date: 2026-03-12T15:23:08.391Z
 permalink: "/vi/aiops-for-government-agencies/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000965?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,48483t"
 ---
 
 <h1>AIOps cho Cơ Quan Chính Phủ: Tối Ưu Hóa Vận Hành và Nâng Cao Dịch Vụ Công</h1>

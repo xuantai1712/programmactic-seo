@@ -2,11 +2,11 @@
 title: "Giám sát Đám mây Lai với AIOps: Nâng cao Hiệu suất và Khả năng Phục hồi"
 description: "Khám phá cách AIOps chuyển đổi việc giám sát đám mây lai, tự động hóa phát hiện sự cố, dự đoán vấn đề và tối ưu hóa hiệu suất hệ thống toàn diện."
 tags: ['articles']
-date: 2026-03-12T15:18:37.110Z
+date: 2026-03-12T15:23:14.030Z
 permalink: "/vi/monitoring-hybrid-cloud-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000718?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,4nr2nr"
 ---
 
 <h2>Giới thiệu về Giám sát Đám mây Lai và Nhu cầu AIOps</h2>

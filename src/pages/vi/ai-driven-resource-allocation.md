@@ -2,11 +2,11 @@
 title: "Tối Ưu Hóa Nguồn Lực: Sức Mạnh Của Phân Bổ Tài Nguyên Dựa Trên AI"
 description: "Khám phá cách AI cách mạng hóa phân bổ tài nguyên, nâng cao hiệu quả hoạt động, tối ưu chi phí và thúc đẩy ra quyết định chiến lược cho doanh nghiệp."
 tags: ['articles']
-date: 2026-03-12T15:17:59.713Z
+date: 2026-03-12T15:23:14.027Z
 permalink: "/vi/ai-driven-resource-allocation/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000865?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,jp0v6g"
 ---
 
 ## Giới Thiệu: Thách Thức Phân Bổ Tài Nguyên Trong Kỷ Nguyên Số

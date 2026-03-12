@@ -2,11 +2,11 @@
 title: "Quản lý Sự cố Hiệu quả với AI: Nâng Tầm Khả Năng Phục Hồi Hệ Thống Doanh Nghiệp"
 description: "Khám phá cách AI biến đổi quản lý sự cố, từ phát hiện đến phục hồi. Tìm hiểu lợi ích, tính năng và cách chọn công cụ phù hợp để tăng cường khả năng phục hồi hệ thống."
 tags: ['articles']
-date: 2026-03-12T15:17:54.060Z
+date: 2026-03-12T15:23:08.403Z
 permalink: "/vi/ai-powered-incident-management/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000860?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,hfzzln"
 ---
 
 <h2>Giới thiệu: Tối ưu hóa Quản lý Sự cố trong Kỷ nguyên Số</h2>

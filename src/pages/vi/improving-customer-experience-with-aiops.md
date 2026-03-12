@@ -2,11 +2,11 @@
 title: "Nâng Tầm Trải Nghiệm Khách Hàng Với AIOps: Chiến Lược Vận Hành CNTT Chủ Động"
 description: "Khám phá cách AIOps chuyển đổi vận hành CNTT, giúp doanh nghiệp chủ động phát hiện, giải quyết sự cố, tối ưu hóa hiệu suất và nâng cao trải nghiệm khách hàng một cách toàn diện."
 tags: ['articles']
-date: 2026-03-12T15:18:57.198Z
+date: 2026-03-12T15:23:19.859Z
 permalink: "/vi/improving-customer-experience-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000623?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,s9hji"
 ---
 
 Trong bối cảnh kỷ nguyên số bùng nổ, trải nghiệm khách hàng (CX) đã trở thành yếu tố then chốt quyết định sự thành công và khả năng cạnh tranh của mọi doanh nghiệp. Khách hàng ngày nay không chỉ kỳ vọng sản phẩm và dịch vụ chất lượng mà còn đòi hỏi sự liền mạch, nhanh chóng và đáng tin cậy trong mọi tương tác. Điều này đặt ra áp lực lớn lên các bộ phận Công nghệ thông tin (CNTT), bởi lẽ hiệu suất của cơ sở hạ tầng và ứng dụng CNTT chính là nền tảng trực tiếp hình thành nên trải nghiệm đó.

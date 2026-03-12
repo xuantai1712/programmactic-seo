@@ -2,11 +2,11 @@
 title: "AIOps trong Dịch Vụ Tài Chính: Tối Ưu Hóa Vận Hành và Nâng Cao Khả Năng Phục Hồi"
 description: "Khám phá cách AIOps giúp các tổ chức tài chính tự động hóa vận hành, phát hiện sự cố nhanh chóng, giảm thiểu rủi ro và nâng cao trải nghiệm khách hàng."
 tags: ['articles']
-date: 2026-03-12T15:17:54.051Z
+date: 2026-03-12T15:23:08.387Z
 permalink: "/vi/aiops-for-financial-services/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000251?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,qdw1ql"
 ---
 
 ## Giới thiệu: AIOps – Chìa Khóa Cho Sự Vận Hành Bền Vững Trong Ngành Tài Chính

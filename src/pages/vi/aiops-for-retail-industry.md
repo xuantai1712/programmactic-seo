@@ -2,11 +2,11 @@
 title: "AIOps cho Ngành Bán lẻ: Tối Ưu Hóa Vận Hành và Nâng Cao Trải Nghiệm Khách Hàng"
 description: "Khám phá cách AIOps giúp ngành bán lẻ giải quyết thách thức, tự động hóa quản lý CNTT, tối ưu hóa hiệu suất và nâng cao trải nghiệm mua sắm. Tìm hiểu ngay."
 tags: ['articles']
-date: 2026-03-12T15:17:54.052Z
+date: 2026-03-12T15:23:08.388Z
 permalink: "/vi/aiops-for-retail-industry/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000137?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,9smww"
 ---
 
 <h1>AIOps cho Ngành Bán lẻ: Tối Ưu Hóa Vận Hành và Nâng Cao Trải Nghiệm Khách Hàng</h1>

@@ -2,11 +2,11 @@
 title: "Giám sát Hạ tầng Làm việc Từ xa với AIOps: Hướng dẫn Toàn diện"
 description: "Nâng cao khả năng hiển thị, chủ động phát hiện sự cố và tối ưu hiệu suất hạ tầng làm việc từ xa với AIOps. Hướng dẫn chuyên sâu giúp doanh nghiệp quản lý hiệu quả môi trường phân tán."
 tags: ['articles']
-date: 2026-03-12T15:18:57.194Z
+date: 2026-03-12T15:23:19.855Z
 permalink: "/vi/monitoring-remote-work-infrastructure-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000952?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,cg9ymg"
 ---
 
 <h1>Giám sát Hạ tầng Làm việc Từ xa với AIOps: Hướng dẫn Toàn diện</h1>

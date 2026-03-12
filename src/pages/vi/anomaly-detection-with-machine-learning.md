@@ -2,11 +2,11 @@
 title: "Phát hiện Bất thường bằng Học máy: Hướng dẫn Toàn diện từ A đến Z"
 description: "Khám phá cách phát hiện bất thường hiệu quả bằng học máy. Hướng dẫn chi tiết về các phương pháp, quy trình triển khai và ứng dụng thực tiễn để bảo vệ hệ thống của bạn."
 tags: ['articles']
-date: 2026-03-12T15:17:58.171Z
+date: 2026-03-12T15:23:02.686Z
 permalink: "/vi/anomaly-detection-with-machine-learning/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000884?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,r7ux2p"
 ---
 
 <h1>Phát hiện Bất thường bằng Học máy: Hướng dẫn Toàn diện từ A đến Z</h1>

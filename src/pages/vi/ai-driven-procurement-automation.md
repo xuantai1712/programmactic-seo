@@ -2,11 +2,11 @@
 title: "Tối Ưu Hóa Mua Sắm: Khám Phá Tiềm Năng Tự Động Hóa Dựa Trên Trí Tuệ Nhân Tạo"
 description: "Nâng tầm quy trình mua sắm doanh nghiệp với tự động hóa AI. Khám phá cách AI giúp tăng hiệu quả, giảm chi phí, quản lý rủi ro và tối ưu hóa chuỗi cung ứng."
 tags: ['articles']
-date: 2026-03-12T15:17:59.710Z
+date: 2026-03-12T15:23:14.022Z
 permalink: "/vi/ai-driven-procurement-automation/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1600000000174?auto=format&fit=crop&w=800&q=80"
+image: "https://source.unsplash.com/featured/800x600?technology,ai,data,bg8wnn"
 ---
 
 <h2>Giới Thiệu: Chuyển Đổi Mua Sắm Trong Kỷ Nguyên Số</h2>
