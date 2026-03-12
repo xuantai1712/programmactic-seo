@@ -19,26 +19,178 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AI-powered Infrastructure as Code: Nâng Tầm Quản Lý Hạ Tầng Hiện Đại" />
   <meta name="twitter:description" content="Khám phá cách AI-powered Infrastructure as Code tự động hóa, tối ưu hóa và tăng cường bảo mật hạ tầng. Giảm thiểu lỗi, tăng hiệu quả và đẩy nhanh triển khai." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    body { font-family: -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-    header { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
-    .lang-switcher a { margin-left: 10px; text-decoration: none; font-size: 0.9em; }
-    .lang-switcher a.active { font-weight: bold; text-decoration: underline; }
-    footer { border-top: 1px solid #eee; padding-top: 20px; margin-top: 40px; font-size: 0.9em; color: #666; }
-    img { max-width: 100%; height: auto; }
-    .adsense { margin: 24px 0; }
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --bg-main: #ffffff;
+      --bg-alt: #f9fafb;
+      --border: #e5e7eb;
+      --max-width: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body { 
+      font-family: 'Inter', -apple-system, sans-serif; 
+      line-height: 1.6; 
+      color: var(--text-main);
+      margin: 0;
+      background-color: var(--bg-main);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header { 
+      background: var(--bg-main);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo::before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 4px;
+      background: var(--bg-alt);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-switcher a {
+      padding: 6px 12px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .lang-switcher a.active {
+      background: white;
+      color: var(--primary);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    main {
+      padding: 48px 0;
+      min-height: 80vh;
+    }
+
+    h1, h2, h3 { 
+      color: #111827; 
+      line-height: 1.2;
+      margin-top: 2rem;
+    }
+
+    h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1.5rem; margin-top: 0; }
+    
+    .prose {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .prose p { margin-bottom: 1.25rem; font-size: 1.125rem; color: #374151; }
+    
+    .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
+
+    footer { 
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      margin-top: 64px;
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: var(--primary-hover); }
+
+    img { max-width: 100%; height: auto; border-radius: 12px; }
+    
+    .adsense { margin: 32px 0; padding: 16px; background: var(--bg-alt); border-radius: 8px; text-align: center; }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      main { padding: 32px 0; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <a href="/vi/"><strong>AiOps Bridge</strong></a>
-    <div class="lang-switcher">
-      <a href="/vi/" class="active">VI</a>
-      <a href="/en/" >EN</a>
+    <div class="container header-content">
+      <a href="/vi/" class="logo">
+        AiOps Bridge
+      </a>
+      <div class="lang-switcher">
+        <a href="/vi/" class="active">VI</a>
+        <a href="/en/" >EN</a>
+      </div>
     </div>
   </header>
-  <main>
-    <h1>AI-powered Infrastructure as Code: Nâng Tầm Quản Lý Hạ Tầng Hiện Đại</h1>
+  
+  <main class="container">
+    <article class="prose">
+      <h1>AI-powered Infrastructure as Code: Nâng Tầm Quản Lý Hạ Tầng Hiện Đại</h1>
 <p>Trong bối cảnh phát triển công nghệ nhanh chóng, việc quản lý hạ tầng công nghệ thông tin đã trở thành một thách thức phức tạp đối với các tổ chức. Sự ra đời của Infrastructure as Code (IaC) đã cách mạng hóa cách chúng ta triển khai và quản lý tài nguyên, mang lại khả năng tự động hóa và nhất quán vượt trội. Giờ đây, với sự tích hợp của Trí tuệ Nhân tạo (AI), IaC đang bước vào một kỷ nguyên mới, hứa hẹn khả năng tối ưu hóa sâu rộng và hiệu quả chưa từng có. AI-powered IaC không chỉ đơn thuần là tự động hóa các tác vụ; nó còn là về việc đưa ra các quyết định thông minh, học hỏi từ dữ liệu và liên tục cải thiện quy trình quản lý hạ tầng.</p>
 <p>Bài viết này sẽ đi sâu vào khái niệm AI-powered IaC, khám phá cách AI bổ trợ cho các nguyên tắc cốt lõi của IaC, và phân tích những lợi ích cũng như thách thức khi áp dụng phương pháp tiên tiến này. Chúng ta sẽ cùng tìm hiểu cách AI có thể biến việc quản lý hạ tầng từ một quy trình thủ công, dễ mắc lỗi thành một hệ thống tự chủ, linh hoạt và mạnh mẽ hơn bao giờ hết.</p>
 
@@ -105,9 +257,14 @@
 <h2>Kết luận</h2>
 <p>AI-powered Infrastructure as Code không chỉ là một xu hướng mà là một bước tiến quan trọng trong hành trình phát triển của DevOps và quản lý hạ tầng. Bằng cách kết hợp sức mạnh của tự động hóa IaC với khả năng học hỏi và ra quyết định của AI, các tổ chức có thể đạt được mức độ hiệu quả, độ tin cậy và bảo mật chưa từng có. Mặc dù có những thách thức cần vượt qua, tiềm năng mà AI-powered IaC mang lại là rất lớn, mở ra cánh cửa cho một tương lai nơi hạ tầng được quản lý một cách thông minh, tự động và thích ứng liên tục với nhu cầu kinh doanh.</p>
 
+    </article>
   </main>
+
   <footer>
-    &copy; 2026 AiOps Bridge
+    <div class="container footer-content">
+      <div>&copy; 2026 <strong>AiOps Bridge</strong>. All rights reserved.</div>
+      <div style="font-size: 0.8rem;">Powered by AiOps Bridge Technology</div>
+    </div>
   </footer>
 </body>
 </html>

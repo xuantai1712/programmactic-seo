@@ -19,26 +19,178 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Phục Hồi Sau Thảm Họa Được Hỗ Trợ bởi AI: Nâng Cao Khả Năng Kháng Cự và Tự Động Hóa" />
   <meta name="twitter:description" content="Khám phá cách AI cách mạng hóa phục hồi sau thảm họa, mang lại khả năng dự đoán, tự động hóa phản ứng và tối ưu hóa quy trình để đảm bảo hoạt động liên tục và nâng cao khả năng kháng cự." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    body { font-family: -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-    header { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
-    .lang-switcher a { margin-left: 10px; text-decoration: none; font-size: 0.9em; }
-    .lang-switcher a.active { font-weight: bold; text-decoration: underline; }
-    footer { border-top: 1px solid #eee; padding-top: 20px; margin-top: 40px; font-size: 0.9em; color: #666; }
-    img { max-width: 100%; height: auto; }
-    .adsense { margin: 24px 0; }
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --bg-main: #ffffff;
+      --bg-alt: #f9fafb;
+      --border: #e5e7eb;
+      --max-width: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body { 
+      font-family: 'Inter', -apple-system, sans-serif; 
+      line-height: 1.6; 
+      color: var(--text-main);
+      margin: 0;
+      background-color: var(--bg-main);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header { 
+      background: var(--bg-main);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo::before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 4px;
+      background: var(--bg-alt);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-switcher a {
+      padding: 6px 12px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .lang-switcher a.active {
+      background: white;
+      color: var(--primary);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    main {
+      padding: 48px 0;
+      min-height: 80vh;
+    }
+
+    h1, h2, h3 { 
+      color: #111827; 
+      line-height: 1.2;
+      margin-top: 2rem;
+    }
+
+    h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1.5rem; margin-top: 0; }
+    
+    .prose {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .prose p { margin-bottom: 1.25rem; font-size: 1.125rem; color: #374151; }
+    
+    .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
+
+    footer { 
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      margin-top: 64px;
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: var(--primary-hover); }
+
+    img { max-width: 100%; height: auto; border-radius: 12px; }
+    
+    .adsense { margin: 32px 0; padding: 16px; background: var(--bg-alt); border-radius: 8px; text-align: center; }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      main { padding: 32px 0; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <a href="/vi/"><strong>AiOps Bridge</strong></a>
-    <div class="lang-switcher">
-      <a href="/vi/" class="active">VI</a>
-      <a href="/en/" >EN</a>
+    <div class="container header-content">
+      <a href="/vi/" class="logo">
+        AiOps Bridge
+      </a>
+      <div class="lang-switcher">
+        <a href="/vi/" class="active">VI</a>
+        <a href="/en/" >EN</a>
+      </div>
     </div>
   </header>
-  <main>
-    <p>Trong bối cảnh kỹ thuật số ngày càng phức tạp, khả năng phục hồi sau thảm họa (Disaster Recovery – DR) đã trở thành một yếu tố then chốt, không chỉ là một lựa chọn mà là một yêu cầu bắt buộc đối với mọi tổ chức. Từ các cuộc tấn công mạng, lỗi phần cứng, thiên tai cho đến sự cố hệ thống không lường trước, nguy cơ gián đoạn hoạt động kinh doanh luôn hiện hữu. Các phương pháp DR truyền thống, thường dựa vào quy trình thủ công và phản ứng chậm chạp, đang dần trở nên kém hiệu quả trước tốc độ và quy mô của các mối đe dọa hiện đại. Đây chính là lúc trí tuệ nhân tạo (AI) bước vào, mang đến một cách tiếp cận đột phá, hứa hẹn biến đổi toàn diện cách chúng ta đối phó và phục hồi sau các sự cố nghiêm trọng.</p>
+  
+  <main class="container">
+    <article class="prose">
+      <p>Trong bối cảnh kỹ thuật số ngày càng phức tạp, khả năng phục hồi sau thảm họa (Disaster Recovery – DR) đã trở thành một yếu tố then chốt, không chỉ là một lựa chọn mà là một yêu cầu bắt buộc đối với mọi tổ chức. Từ các cuộc tấn công mạng, lỗi phần cứng, thiên tai cho đến sự cố hệ thống không lường trước, nguy cơ gián đoạn hoạt động kinh doanh luôn hiện hữu. Các phương pháp DR truyền thống, thường dựa vào quy trình thủ công và phản ứng chậm chạp, đang dần trở nên kém hiệu quả trước tốc độ và quy mô của các mối đe dọa hiện đại. Đây chính là lúc trí tuệ nhân tạo (AI) bước vào, mang đến một cách tiếp cận đột phá, hứa hẹn biến đổi toàn diện cách chúng ta đối phó và phục hồi sau các sự cố nghiêm trọng.</p>
 <p>Phục hồi sau thảm họa được hỗ trợ bởi AI không chỉ đơn thuần là tự động hóa các tác vụ; đó là việc trang bị cho hệ thống khả năng học hỏi, dự đoán và phản ứng một cách thông minh, giúp giảm thiểu đáng kể thời gian ngừng hoạt động và nâng cao khả năng chống chịu tổng thể. Bài viết này sẽ đi sâu vào cách AI đang định hình lại lĩnh vực DR, từ việc phát hiện sớm các dấu hiệu bất thường cho đến việc tự động hóa toàn bộ quy trình khôi phục, mang lại lợi ích thiết thực cho các doanh nghiệp trong hành trình đảm bảo tính liên tục của hoạt động.</p>
 <h2>Sự Cần Thiết của AI trong Phục Hồi Sau Thảm Họa Hiện Đại</h2>
 
@@ -174,9 +326,14 @@
 <h2>Kết Luận</h2>
 <p>Phục hồi sau thảm họa được hỗ trợ bởi AI không còn là một khái niệm viễn tưởng mà đang dần trở thành một thực tế thiết yếu, định hình lại cách các tổ chức bảo vệ tài sản kỹ thuật số và đảm bảo tính liên tục của hoạt động kinh doanh. Bằng cách tận dụng khả năng phân tích dự đoán, tự động hóa phản ứng, điều phối thông minh và học hỏi liên tục của AI, doanh nghiệp có thể giảm thiểu đáng kể rủi ro, tối ưu hóa quy trình phục hồi và xây dựng một nền tảng IT kiên cường hơn. Mặc dù có những thách thức cần vượt qua, lợi ích mà AI mang lại là không thể phủ nhận, biến nó thành một yếu tố then chốt trong mọi chiến lược phục hồi sau thảm họa hiện đại. Các tổ chức cần chủ động khám phá và tích hợp AI vào kế hoạch DR của mình để không chỉ sống sót mà còn phát triển mạnh mẽ trong bối cảnh kỹ thuật số đầy biến động.</p>
 
+    </article>
   </main>
+
   <footer>
-    &copy; 2026 AiOps Bridge
+    <div class="container footer-content">
+      <div>&copy; 2026 <strong>AiOps Bridge</strong>. All rights reserved.</div>
+      <div style="font-size: 0.8rem;">Powered by AiOps Bridge Technology</div>
+    </div>
   </footer>
 </body>
 </html>

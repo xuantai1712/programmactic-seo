@@ -19,26 +19,178 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AIOps và Sức Mạnh Cộng Tác: Nâng Tầm Hiệu Quả Vận Hành CNTT" />
   <meta name="twitter:description" content="Khám phá cách AIOps củng cố hợp tác nhóm, tối ưu hóa quy trình và nâng cao hiệu quả vận hành CNTT. Tìm hiểu chiến lược triển khai AIOps để thúc đẩy môi trường làm việc liền mạch." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    body { font-family: -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-    header { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
-    .lang-switcher a { margin-left: 10px; text-decoration: none; font-size: 0.9em; }
-    .lang-switcher a.active { font-weight: bold; text-decoration: underline; }
-    footer { border-top: 1px solid #eee; padding-top: 20px; margin-top: 40px; font-size: 0.9em; color: #666; }
-    img { max-width: 100%; height: auto; }
-    .adsense { margin: 24px 0; }
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --bg-main: #ffffff;
+      --bg-alt: #f9fafb;
+      --border: #e5e7eb;
+      --max-width: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body { 
+      font-family: 'Inter', -apple-system, sans-serif; 
+      line-height: 1.6; 
+      color: var(--text-main);
+      margin: 0;
+      background-color: var(--bg-main);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header { 
+      background: var(--bg-main);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo::before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 4px;
+      background: var(--bg-alt);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-switcher a {
+      padding: 6px 12px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .lang-switcher a.active {
+      background: white;
+      color: var(--primary);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    main {
+      padding: 48px 0;
+      min-height: 80vh;
+    }
+
+    h1, h2, h3 { 
+      color: #111827; 
+      line-height: 1.2;
+      margin-top: 2rem;
+    }
+
+    h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1.5rem; margin-top: 0; }
+    
+    .prose {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .prose p { margin-bottom: 1.25rem; font-size: 1.125rem; color: #374151; }
+    
+    .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
+
+    footer { 
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      margin-top: 64px;
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: var(--primary-hover); }
+
+    img { max-width: 100%; height: auto; border-radius: 12px; }
+    
+    .adsense { margin: 32px 0; padding: 16px; background: var(--bg-alt); border-radius: 8px; text-align: center; }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      main { padding: 32px 0; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <a href="/vi/"><strong>AiOps Bridge</strong></a>
-    <div class="lang-switcher">
-      <a href="/vi/" class="active">VI</a>
-      <a href="/en/" >EN</a>
+    <div class="container header-content">
+      <a href="/vi/" class="logo">
+        AiOps Bridge
+      </a>
+      <div class="lang-switcher">
+        <a href="/vi/" class="active">VI</a>
+        <a href="/en/" >EN</a>
+      </div>
     </div>
   </header>
-  <main>
-    <p>Trong bối cảnh công nghệ thông tin (CNTT) ngày càng phức tạp và mở rộng, các tổ chức đang phải đối mặt với một lượng lớn dữ liệu vận hành từ nhiều nguồn khác nhau. Từ nhật ký hệ thống, số liệu hiệu suất đến cảnh báo bảo mật, khối lượng thông tin này có thể áp đảo ngay cả những nhóm vận hành giỏi nhất. Sự phức tạp này không chỉ gây khó khăn trong việc xác định và giải quyết sự cố mà còn cản trở khả năng hợp tác hiệu quả giữa các thành viên trong nhóm và giữa các bộ phận khác nhau.</p>
+  
+  <main class="container">
+    <article class="prose">
+      <p>Trong bối cảnh công nghệ thông tin (CNTT) ngày càng phức tạp và mở rộng, các tổ chức đang phải đối mặt với một lượng lớn dữ liệu vận hành từ nhiều nguồn khác nhau. Từ nhật ký hệ thống, số liệu hiệu suất đến cảnh báo bảo mật, khối lượng thông tin này có thể áp đảo ngay cả những nhóm vận hành giỏi nhất. Sự phức tạp này không chỉ gây khó khăn trong việc xác định và giải quyết sự cố mà còn cản trở khả năng hợp tác hiệu quả giữa các thành viên trong nhóm và giữa các bộ phận khác nhau.</p>
 <p>Đây chính là lúc AIOps (Trí tuệ Nhân tạo cho Vận hành CNTT) trở thành một yếu tố thay đổi cuộc chơi. AIOps không chỉ là một công cụ phân tích dữ liệu; nó là một phương pháp tiếp cận chiến lược nhằm cải thiện đáng kể cách thức các nhóm vận hành làm việc cùng nhau, từ đó nâng cao hiệu quả và khả năng phục hồi của toàn bộ hệ thống CNTT. Bằng cách tận dụng sức mạnh của trí tuệ nhân tạo và học máy, AIOps mang lại cái nhìn sâu sắc, tự động hóa các quy trình và tạo ra một nền tảng chung cho sự hợp tác.</p>
 <h2>AIOps là gì và tại sao lại quan trọng cho sự hợp tác?</h2>
 
@@ -88,9 +240,14 @@
 <p>Trong kỷ nguyên số hóa, nơi tốc độ và sự linh hoạt là yếu tố sống còn, việc tăng cường hợp tác trong vận hành CNTT không chỉ là một lợi thế mà là một yêu cầu bắt buộc. AIOps đóng vai trò là chất xúc tác mạnh mẽ cho sự thay đổi này, biến dữ liệu thành trí tuệ có thể hành động, tự động hóa các tác vụ lặp lại và tạo ra một nền tảng chung cho các nhóm làm việc cùng nhau một cách mạch lạc hơn.</p>
 <p>Bằng cách triển khai AIOps một cách chiến lược, các tổ chức có thể phá vỡ các rào cản thông tin, tối ưu hóa quy trình làm việc và thúc đẩy một môi trường nơi các nhóm vận hành có thể giao tiếp, phối hợp và đổi mới hiệu quả hơn bao giờ hết. Đây là con đường để đạt được hiệu quả vận hành vượt trội và đảm bảo sự ổn định, an toàn cho hệ thống CNTT trong tương lai.</p>
 
+    </article>
   </main>
+
   <footer>
-    &copy; 2026 AiOps Bridge
+    <div class="container footer-content">
+      <div>&copy; 2026 <strong>AiOps Bridge</strong>. All rights reserved.</div>
+      <div style="font-size: 0.8rem;">Powered by AiOps Bridge Technology</div>
+    </div>
   </footer>
 </body>
 </html>

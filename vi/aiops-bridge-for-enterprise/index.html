@@ -19,26 +19,178 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Cầu Nối AIOps: Tối Ưu Hóa Vận Hành IT, Đẩy Nhanh Chuyển Đổi Số Cho Doanh Nghiệp" />
   <meta name="twitter:description" content="Khám phá cách AIOps tạo cầu nối giữa dữ liệu và hành động, tự động hóa vận hành IT, giảm sự cố, tăng hiệu suất và đẩy nhanh chuyển đổi số cho doanh nghiệp." />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    body { font-family: -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-    header { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
-    .lang-switcher a { margin-left: 10px; text-decoration: none; font-size: 0.9em; }
-    .lang-switcher a.active { font-weight: bold; text-decoration: underline; }
-    footer { border-top: 1px solid #eee; padding-top: 20px; margin-top: 40px; font-size: 0.9em; color: #666; }
-    img { max-width: 100%; height: auto; }
-    .adsense { margin: 24px 0; }
+    :root {
+      --primary: #2563eb;
+      --primary-hover: #1d4ed8;
+      --text-main: #1f2937;
+      --text-muted: #6b7280;
+      --bg-main: #ffffff;
+      --bg-alt: #f9fafb;
+      --border: #e5e7eb;
+      --max-width: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+    
+    body { 
+      font-family: 'Inter', -apple-system, sans-serif; 
+      line-height: 1.6; 
+      color: var(--text-main);
+      margin: 0;
+      background-color: var(--bg-main);
+    }
+
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header { 
+      background: var(--bg-main);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .logo::before {
+      content: "";
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .lang-switcher {
+      display: flex;
+      gap: 4px;
+      background: var(--bg-alt);
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .lang-switcher a {
+      padding: 6px 12px;
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+
+    .lang-switcher a.active {
+      background: white;
+      color: var(--primary);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    main {
+      padding: 48px 0;
+      min-height: 80vh;
+    }
+
+    h1, h2, h3 { 
+      color: #111827; 
+      line-height: 1.2;
+      margin-top: 2rem;
+    }
+
+    h1 { font-size: 2.5rem; font-weight: 800; margin-bottom: 1.5rem; margin-top: 0; }
+    
+    .prose {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .prose p { margin-bottom: 1.25rem; font-size: 1.125rem; color: #374151; }
+    
+    .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
+
+    footer { 
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border);
+      padding: 48px 0;
+      margin-top: 64px;
+      color: var(--text-muted);
+      font-size: 0.9375rem;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      text-align: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: var(--primary-hover); }
+
+    img { max-width: 100%; height: auto; border-radius: 12px; }
+    
+    .adsense { margin: 32px 0; padding: 16px; background: var(--bg-alt); border-radius: 8px; text-align: center; }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      main { padding: 32px 0; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <a href="/vi/"><strong>AiOps Bridge</strong></a>
-    <div class="lang-switcher">
-      <a href="/vi/" class="active">VI</a>
-      <a href="/en/" >EN</a>
+    <div class="container header-content">
+      <a href="/vi/" class="logo">
+        AiOps Bridge
+      </a>
+      <div class="lang-switcher">
+        <a href="/vi/" class="active">VI</a>
+        <a href="/en/" >EN</a>
+      </div>
     </div>
   </header>
-  <main>
-    <h2>Giới Thiệu: Đối Mặt Với Sự Phức Tạp Của Vận Hành IT Hiện Đại</h2>
+  
+  <main class="container">
+    <article class="prose">
+      <h2>Giới Thiệu: Đối Mặt Với Sự Phức Tạp Của Vận Hành IT Hiện Đại</h2>
 <p>Trong kỷ nguyên số hóa, các doanh nghiệp đang phải vật lộn với một môi trường IT ngày càng phức tạp và phân tán. Từ hạ tầng đám mây lai (hybrid cloud), kiến trúc microservices, đến vô số ứng dụng và thiết bị kết nối, lượng dữ liệu vận hành được tạo ra đang bùng nổ. Các đội ngũ IT truyền thống thường gặp khó khăn trong việc theo dõi, phân tích và phản ứng kịp thời với hàng núi cảnh báo, nhật ký (logs) và số liệu (metrics) này.</p>
 <p>Sự phức tạp này không chỉ làm chậm quá trình phát hiện và giải quyết sự cố mà còn cản trở khả năng đổi mới và tốc độ thích nghi của doanh nghiệp. Đây là lúc AIOps (Artificial Intelligence for IT Operations) xuất hiện như một giải pháp đột phá. AIOps không chỉ là một công cụ; nó là một cầu nối chiến lược, kết nối các mảnh ghép rời rạc của vận hành IT, biến dữ liệu thô thành thông tin chi tiết có giá trị và hành động tự động hóa, từ đó định hình lại cách các doanh nghiệp quản lý và tối ưu hóa hệ thống của mình.</p>
 
@@ -117,9 +269,14 @@
 <p>Trong bối cảnh môi trường IT ngày càng mở rộng và phức tạp, cầu nối AIOps là yếu tố then chốt giúp các doanh nghiệp duy trì sự nhanh nhẹn và cạnh tranh. Bằng cách hợp nhất dữ liệu, tự động hóa quy trình và cung cấp thông tin chi tiết dựa trên AI, AIOps không chỉ giải quyết các thách thức vận hành hiện tại mà còn mở ra cánh cửa cho sự đổi mới và tăng trưởng bền vững.</p>
 <p>Triển khai AIOps là một hành trình, không phải là một điểm đến. Nó đòi hỏi sự cam kết, đầu tư vào công nghệ và con người, cũng như một chiến lược rõ ràng. Tuy nhiên, những lợi ích mà nó mang lại – từ việc nâng cao hiệu suất, giảm thiểu rủi ro đến thúc đẩy chuyển đổi số – chắc chắn sẽ tạo ra giá trị to lớn, định hình lại tương lai của vận hành IT trong doanh nghiệp.</p>
 
+    </article>
   </main>
+
   <footer>
-    &copy; 2026 AiOps Bridge
+    <div class="container footer-content">
+      <div>&copy; 2026 <strong>AiOps Bridge</strong>. All rights reserved.</div>
+      <div style="font-size: 0.8rem;">Powered by AiOps Bridge Technology</div>
+    </div>
   </footer>
 </body>
 </html>
