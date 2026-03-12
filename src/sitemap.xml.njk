@@ -3,12 +3,17 @@ permalink: /sitemap.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {%- for page in collections.all %}
   {% set absoluteUrl %}{{ site.url }}{{ page.url | url }}{% endset %}
   <url>
     <loc>{{ absoluteUrl }}</loc>
     <lastmod>{{ page.date | date("yyyy-MM-dd") }}</lastmod>
+    {% if page.data.lang %}
+    <xhtml:link rel="alternate" hreflang="vi" href="{{ site.url }}/vi{{ page.url | replace('/en/', '/') | replace('/vi/', '/') }}" />
+    <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.url | replace('/en/', '/') | replace('/vi/', '/') }}" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/vi{{ page.url | replace('/en/', '/') | replace('/vi/', '/') }}" />
+    {% endif %}
   </url>
 {%- endfor %}
 </urlset>

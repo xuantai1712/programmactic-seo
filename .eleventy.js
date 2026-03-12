@@ -64,6 +64,10 @@ module.exports = function (eleventyConfig) {
     return d.toISOString();
   });
 
+  eleventyConfig.addFilter("filterByLang", (collection, lang) => {
+    return collection.filter((item) => item.data.lang === lang);
+  });
+
   eleventyConfig.addCollection("articles", (collectionApi) => {
     return collectionApi.getFilteredByGlob("src/pages/**/*.md");
   });

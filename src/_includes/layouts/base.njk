@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="{{ lang or 'vi' }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ title or page.fileSlug | escape }}</title>
+  <title>{{ title or page.fileSlug | escape }} - {{ site.name }}</title>
   {% set canonical = site.url + page.url %}
   <link rel="canonical" href="{{ canonical }}" />
+  <link rel="alternate" hreflang="vi" href="{{ site.url }}/vi{{ page.url | replace('/en/', '/') | replace('/vi/', '/') }}" />
+  <link rel="alternate" hreflang="en" href="{{ site.url }}/en{{ page.url | replace('/en/', '/') | replace('/vi/', '/') }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}/vi{{ page.url | replace('/en/', '/') | replace('/vi/', '/') }}" />
   {% if description %}<meta name="description" content="{{ description | escape }}" />{% endif %}
   {% if site.googleVerification %}<meta name="google-site-verification" content="{{ site.googleVerification }}" />{% endif %}
   <meta property="og:type" content="article" />
@@ -18,7 +21,9 @@
   {% if description %}<meta name="twitter:description" content="{{ description | escape }}" />{% endif %}
   <style>
     body { font-family: -apple-system, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; }
-    header { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; }
+    header { border-bottom: 1px solid #eee; padding-bottom: 20px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+    .lang-switcher a { margin-left: 10px; text-decoration: none; font-size: 0.9em; }
+    .lang-switcher a.active { font-weight: bold; text-decoration: underline; }
     footer { border-top: 1px solid #eee; padding-top: 20px; margin-top: 40px; font-size: 0.9em; color: #666; }
     img { max-width: 100%; height: auto; }
     .adsense { margin: 24px 0; }
@@ -26,7 +31,11 @@
 </head>
 <body>
   <header>
-    <a href="/"><strong>{{ site.name }}</strong></a>
+    <a href="/{{ lang or 'vi' }}/"><strong>{{ site.name }}</strong></a>
+    <div class="lang-switcher">
+      <a href="/vi/" {% if lang == 'vi' %}class="active"{% endif %}>VI</a>
+      <a href="/en/" {% if lang == 'en' %}class="active"{% endif %}>EN</a>
+    </div>
   </header>
   <main>
     {{ content | safe }}

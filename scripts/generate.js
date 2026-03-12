@@ -8,13 +8,14 @@ const { parse } = require("csv-parse/sync");
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY || "";
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY || "";
 const OPENAI_MODEL = process.env.OPENAI_MODEL || "gpt-4o-mini";
-const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.0-flash";
+const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-2.5-flash";
 const PROJECT_ROOT = path.resolve(__dirname, "..", "");
 const CSV_PATH = path.join(PROJECT_ROOT, "keyword.csv");
-const OUT_DIR = path.join(PROJECT_ROOT, "src", "pages");
-const CACHE_DIR = path.join(PROJECT_ROOT, ".cache");
+const OUT_DIR_BASE = path.join(PROJECT_ROOT, "src", "pages");
+const CACHE_DIR_BASE = path.join(PROJECT_ROOT, ".cache");
 const LOG_DIR = path.join(PROJECT_ROOT, "logs");
 const LOG_FILE = path.join(LOG_DIR, "generate.log");
+const LANGUAGES = ["vi", "en"]; // Hỗ trợ Tiếng Việt và Tiếng Anh
 
 function logLine(line) {
   const stamp = new Date().toISOString();
@@ -34,9 +35,9 @@ function slugify(s) {
     .slice(0, 80);
 }
 
-async function ensureDirs() {
-  await fsp.mkdir(OUT_DIR, { recursive: true });
-  await fsp.mkdir(CACHE_DIR, { recursive: true });
+async function ensureDirs(lang) {
+  await fsp.mkdir(path.join(OUT_DIR_BASE, lang), { recursive: true });
+  await fsp.mkdir(path.join(CACHE_DIR_BASE, lang), { recursive: true });
   await fsp.mkdir(LOG_DIR, { recursive: true });
 }
 
@@ -135,27 +136,35 @@ async function callWithRetry(fn, attempts = 3, baseDelayMs = 1500) {
   throw lastErr;
 }
 
-function buildPrompt({ keyword, category, intent }) {
+function buildPrompt({ keyword, category, intent }, lang) {
+  const langName = lang === "vi" ? "Tiếng Việt" : "Tiếng Anh (English)";
   const system = [
     "Bạn là AI SEO writer chuyên nghiệp.",
     "Không bịa dữ liệu, không tự tạo giá/số liệu/thống kê.",
     "Nếu cần nêu số liệu, chỉ đưa nguyên tắc/khái quát không số cụ thể.",
-    "Nội dung phải hữu ích, có cấu trúc, và trung lập."
+    "Nội dung phải hữu ích, có cấu trúc, và trung lập.",
+    "BẮT BUỘC: Luôn trả về dữ liệu ở định dạng JSON thô (raw JSON), không nằm trong block markdown, không có bất kỳ văn bản nào khác ngoài JSON."
   ].join(" ");
   const user = [
     `Chủ đề: ${keyword}`,
     category ? `Chuyên mục: ${category}` : "",
     intent ? `Ý định tìm kiếm: ${intent}` : "",
+    `Ngôn ngữ bài viết: ${langName}`,
     "",
     "Yêu cầu:",
-    "- Viết bài SEO 1200–2000 từ, tiếng Việt tự nhiên, không lặp.",
+    `- Viết bài SEO 1200–2000 từ bằng ${langName} tự nhiên, không lặp.`,
     "- Tựa đề hấp dẫn, không clickbait.",
     "- Meta description 150–160 ký tự, rõ lợi ích.",
     "- Dùng heading H2/H3, danh sách, đoạn ngắn.",
     "- Không nêu giá, % hay số liệu cụ thể.",
     "- Không hứa hẹn/đảm bảo phi thực tế.",
     "",
-    "Định dạng trả về JSON với khóa: title, meta_description, content."
+    "Trả về JSON với cấu trúc:",
+    "{",
+    '  "title": "...",',
+    '  "meta_description": "...",',
+    '  "content": "..."',
+    "}"
   ]
     .filter(Boolean)
     .join("\n");
@@ -171,15 +180,16 @@ function injectAffiliatePlaceholder(markdown) {
   return markdown + "\n\n<!-- AFFILIATE_PLACEHOLDER -->";
 }
 
-function toFrontMatter(data, body) {
+function toFrontMatter(data, body, lang) {
   const fm = [
     "---",
     `title: "${(data.title || "").replace(/\"/g, '\\"')}"`,
     `description: "${(data.meta_description || "").replace(/\"/g, '\\"')}"`,
     "tags: ['articles']",
     `date: ${new Date().toISOString()}`,
-    `permalink: "/${data.slug}/index.html"`,
+    `permalink: "/${lang}/${data.slug}/index.html"`,
     "layout: layouts/base.njk",
+    `lang: ${lang}`,
     "---",
     "",
     body,
@@ -188,10 +198,12 @@ function toFrontMatter(data, body) {
   return fm;
 }
 
-async function processRecord(rec, rateDelayMs) {
+async function processRecord(rec, rateDelayMs, lang) {
   const slug = slugify(rec.keyword);
-  const outFile = path.join(OUT_DIR, `${slug}.md`);
-  const cacheFile = path.join(CACHE_DIR, `${slug}.json`);
+  const outDir = path.join(OUT_DIR_BASE, lang);
+  const cacheDir = path.join(CACHE_DIR_BASE, lang);
+  const outFile = path.join(outDir, `${slug}.md`);
+  const cacheFile = path.join(cacheDir, `${slug}.json`);
   const exists = fs.existsSync(outFile);
   if (exists) {
     logLine(`Skip exists: ${outFile}`);
@@ -203,14 +215,13 @@ async function processRecord(rec, rateDelayMs) {
       const body = injectAffiliatePlaceholder(cached.content || "");
       await fsp.writeFile(
         outFile,
-        toFrontMatter({ title: cached.title || rec.keyword, meta_description: cached.meta_description || "", slug }, body),
+        toFrontMatter({ title: cached.title || rec.keyword, meta_description: cached.meta_description || "", slug }, body, lang),
         "utf8"
       );
       logLine(`Write from cache: ${outFile}`);
-      await new Promise((r) => setTimeout(r, rateDelayMs));
       return;
     } catch (e) {
-      logLine(`Cache read error for ${slug}: ${e.message}`);
+      logLine(`Cache read error for ${slug} (${lang}): ${e.message}`);
     }
   }
 
@@ -218,21 +229,26 @@ async function processRecord(rec, rateDelayMs) {
     throw new Error("Missing required env: OPENAI_API_KEY or GEMINI_API_KEY");
   }
 
-  const { system, user } = buildPrompt(rec);
+  const { system, user } = buildPrompt(rec, lang);
   let content;
 
   if (GEMINI_API_KEY) {
-    logLine(`Generating with Gemini: ${rec.keyword}`);
+    logLine(`Generating with Gemini (${lang}): ${rec.keyword}`);
     content = await callWithRetry(() => geminiChatJSON(system, user), 3, 2000);
   } else {
-    logLine(`Generating with OpenAI: ${rec.keyword}`);
+    logLine(`Generating with OpenAI (${lang}): ${rec.keyword}`);
     content = await callWithRetry(() => openaiChatJSON(system, user), 3, 1500);
   }
 
   let data;
   try {
     const cleaned = content.replace(/```json\s?|```/g, "").trim();
-    data = JSON.parse(cleaned);
+    // Xử lý các ký tự điều khiển gây lỗi JSON.parse (như newline thực tế trong chuỗi)
+    const safe = cleaned.replace(/[\x00-\x1F\x7F-\x9F]/g, (match) => {
+      if (match === "\n" || match === "\r" || match === "\t") return " ";
+      return "";
+    });
+    data = JSON.parse(safe);
   } catch {
     const match = content.match(/\{[\s\S]*\}/);
     if (match) {
@@ -248,35 +264,46 @@ async function processRecord(rec, rateDelayMs) {
 
   await fsp.writeFile(
     outFile,
-    toFrontMatter({ title, meta_description: meta, slug }, body),
+    toFrontMatter({ title, meta_description: meta, slug }, body, lang),
     "utf8"
   );
   await fsp.writeFile(cacheFile, JSON.stringify({ title, meta_description: meta, content: bodyRaw }, null, 2), "utf8");
-  logLine(`Generated: ${outFile}`);
-  await new Promise((r) => setTimeout(r, rateDelayMs));
+  logLine(`Generated (${lang}): ${outFile}`);
 }
 
 async function run() {
-  await ensureDirs();
+  for (const lang of LANGUAGES) {
+    await ensureDirs(lang);
+  }
+
   if (process.env.PREVIEW === "true") {
     logLine("Preview mode: skipping content generation");
     return;
   }
   const rows = await readCSV(CSV_PATH);
 
-  const rateMs = Number(process.env.RATE_DELAY_MS || 1200);
-  const batchSize = Number(process.env.BATCH_SIZE || 5);
-  let i = 0;
-  while (i < rows.length) {
-    const slice = rows.slice(i, i + batchSize);
-    await Promise.all(
-      slice.map((r, idx) =>
-        processRecord(r, rateMs + idx * 200).catch((e) => {
-          logLine(`Error for "${r.keyword}": ${e.message}`);
-        })
-      )
-    );
-    i += batchSize;
+  const rateMs = Number(process.env.RATE_DELAY_MS || 5000);
+  const batchSize = Number(process.env.BATCH_SIZE || 30);
+
+  for (const lang of LANGUAGES) {
+    logLine(`Starting generation for language: ${lang}`);
+    let i = 0;
+    while (i < rows.length) {
+      const slice = rows.slice(i, i + batchSize);
+      logLine(`[${lang}] Starting batch ${i / batchSize + 1} with ${slice.length} records`);
+      await Promise.all(
+        slice.map((r, idx) =>
+          processRecord(r, 0, lang).catch((e) => {
+            logLine(`Error for "${r.keyword}" (${lang}): ${e.message}`);
+          })
+        )
+      );
+      i += batchSize;
+      if (i < rows.length) {
+        logLine(`[${lang}] Waiting ${rateMs}ms before next batch...`);
+        await new Promise((r) => setTimeout(r, rateMs));
+      }
+    }
   }
   logLine("Done.");
 }

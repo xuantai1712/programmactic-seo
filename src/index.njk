@@ -1,11 +1,20 @@
 ---
 layout: layouts/base.njk
-permalink: "/"
-title: Trang chủ
-description: Danh sách bài viết mới nhất
+pagination:
+  data: languages
+  size: 1
+  alias: lang
+permalink: "/{{ lang }}/index.html"
+languages:
+  - vi
+  - en
+eleventyComputed:
+  title: "{{ 'Trang chủ' if lang == 'vi' else 'Home' }}"
+  description: "{{ 'Danh sách bài viết mới nhất' if lang == 'vi' else 'Latest articles' }}"
 ---
-<h1>Bài viết mới</h1>
-{% set items = collections.articles or [] %}
+<h1>{{ 'Bài viết mới' if lang == 'vi' else 'Latest Articles' }}</h1>
+
+{% set items = collections.articles | filterByLang(lang) %}
 {% if items.length %}
 <ul>
   {% for item in items | reverse %}
@@ -16,7 +25,7 @@ description: Danh sách bài viết mới nhất
   {% endfor %}
 </ul>
 {% else %}
-<p>Chưa có bài viết.</p>
+<p>{{ 'Chưa có bài viết.' if lang == 'vi' else 'No articles yet.' }}</p>
 {% endif %}
 
 {% if site.preview %}
