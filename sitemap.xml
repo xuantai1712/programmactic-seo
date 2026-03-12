@@ -2046,4 +2046,14 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/serverless-monitoring-with-aiops/" />
     
   </url>
+  
+  <url>
+    <loc>https://aiopsbridge.com/en/improving-data-privacy-with-aiops/</loc>
+    <lastmod>2026-03-12</lastmod>
+    
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/improving-data-privacy-with-aiops/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/improving-data-privacy-with-aiops/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/improving-data-privacy-with-aiops/" />
+    
+  </url>
 </urlset>
