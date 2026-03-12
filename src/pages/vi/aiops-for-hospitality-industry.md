@@ -2,11 +2,11 @@
 title: "AIOps trong Ngành Khách sạn: Nâng Tầm Trải Nghiệm và Hiệu Suất Vận Hành"
 description: "Khám phá cách AIOps tối ưu hóa vận hành, dự đoán sự cố và nâng cao trải nghiệm khách hàng trong ngành khách sạn. Tìm hiểu giải pháp công nghệ thông minh cho hiệu suất vượt trội."
 tags: ['articles']
-date: 2026-03-12T15:43:16.805Z
+date: 2026-03-12T16:07:37.165Z
 permalink: "/vi/aiops-for-hospitality-industry/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
 ---
 
 Ngành khách sạn, với bản chất năng động và yêu cầu cao về dịch vụ, luôn tìm kiếm những giải pháp công nghệ tiên tiến để duy trì lợi thế cạnh tranh và mang lại trải nghiệm khách hàng xuất sắc. Trong bối cảnh hạ tầng công nghệ thông tin (CNTT) ngày càng phức tạp, từ hệ thống quản lý tài sản (PMS), hệ thống bán hàng (POS), công cụ đặt phòng trực tuyến đến các thiết bị IoT trong phòng thông minh, việc quản lý và đảm bảo hoạt động liên tục trở thành một thách thức lớn.

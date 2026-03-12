@@ -2,11 +2,11 @@
 title: "Định Hình Tương Lai Vận Hành CNTT: Vai Trò Của Trí Tuệ Nhân Tạo"
 description: "Khám phá cách AI đang cách mạng hóa vận hành CNTT, từ tự động hóa đến dự đoán sự cố. Tìm hiểu lợi ích và thách thức khi áp dụng AI cho hiệu quả và độ tin cậy vượt trội."
 tags: ['articles']
-date: 2026-03-12T15:41:31.464Z
+date: 2026-03-12T16:07:01.315Z
 permalink: "/vi/future-of-ai-in-it-operations/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h2>Giới Thiệu: Kỷ Nguyên Mới Của Vận Hành CNTT</h2>

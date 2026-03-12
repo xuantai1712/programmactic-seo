@@ -2,7 +2,7 @@
 title: "Nâng Cao Độ Tin Cậy Hệ Thống Bằng Trí Tuệ Nhân Tạo: Hướng Dẫn Toàn Diện"
 description: "Khám phá cách AI biến đổi độ tin cậy hệ thống, từ phát hiện sớm sự cố đến tự động hóa phản hồi. Tối ưu hóa vận hành, giảm thiểu gián đoạn và tăng cường ổn định cho hạ tầng của bạn."
 tags: ['articles']
-date: 2026-03-12T15:42:41.310Z
+date: 2026-03-12T16:07:37.167Z
 permalink: "/vi/improving-system-reliability-with-ai/index.html"
 layout: layouts/base.njk
 lang: vi

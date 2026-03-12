@@ -2,11 +2,11 @@
 title: "Lập Kế Hoạch Năng Lực Dựa Trên AI: Tối Ưu Hóa Vận Hành và Hiệu Suất Doanh Nghiệp"
 description: "Khám phá cách lập kế hoạch năng lực dựa trên AI biến đổi hoạt động doanh nghiệp, dự báo chính xác nhu cầu, tối ưu hóa nguồn lực và nâng cao hiệu suất tổng thể. Đưa ra quyết định thông minh hơn."
 tags: ['articles']
-date: 2026-03-12T15:41:31.470Z
+date: 2026-03-12T16:07:01.320Z
 permalink: "/vi/ai-driven-capacity-planning/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Lập Kế Hoạch Năng Lực Dựa Trên AI: Tối Ưu Hóa Vận Hành và Hiệu Suất Doanh Nghiệp</h1>

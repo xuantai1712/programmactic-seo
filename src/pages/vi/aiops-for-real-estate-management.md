@@ -2,7 +2,7 @@
 title: "AIOps trong Quản lý Bất động sản: Chuyển đổi Vận hành và Tối ưu hóa Hiệu suất"
 description: "Khám phá cách AIOps chuyển đổi quản lý bất động sản bằng cách tự động hóa, dự đoán sự cố và tối ưu hóa vận hành. Nâng cao hiệu quả và giảm chi phí."
 tags: ['articles']
-date: 2026-03-12T15:42:41.307Z
+date: 2026-03-12T16:07:37.164Z
 permalink: "/vi/aiops-for-real-estate-management/index.html"
 layout: layouts/base.njk
 lang: vi

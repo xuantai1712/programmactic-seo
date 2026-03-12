@@ -2,11 +2,11 @@
 title: "Tối Ưu Hóa Vận Hành IT: Hướng Dẫn Tích Hợp AIOps Vào Quy Trình Hiện Có Của Doanh Nghiệp"
 description: "Nâng cao hiệu quả vận hành, giảm sự cố, tối ưu tài nguyên IT. Khám phá cách tích hợp AIOps liền mạch vào quy trình hiện có để tăng cường ổn định và năng suất."
 tags: ['articles']
-date: 2026-03-12T15:41:31.467Z
+date: 2026-03-12T16:07:01.319Z
 permalink: "/vi/integrating-aiops-into-existing-workflows/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80"
 ---
 
 Giới thiệu

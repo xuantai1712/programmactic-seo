@@ -2,11 +2,11 @@
 title: "Giám Sát Hiệu Suất Với AIOps: Nâng Tầm Vận Hành Hệ Thống Hiện Đại"
 description: "Khám phá cách AIOps biến đổi việc giám sát hiệu suất, giúp phát hiện và giải quyết sự cố nhanh chóng, tối ưu hóa vận hành IT và nâng cao độ ổn định hệ thống. Tìm hiểu về lợi ích và ứng dụng thực tiễn."
 tags: ['articles']
-date: 2026-03-12T15:42:05.948Z
+date: 2026-03-12T16:07:01.318Z
 permalink: "/vi/performance-monitoring-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Giám Sát Hiệu Suất Với AIOps: Nâng Tầm Vận Hành Hệ Thống Hiện Đại</h1>

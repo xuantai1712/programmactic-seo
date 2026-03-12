@@ -2,11 +2,11 @@
 title: "AIOps trong Dịch vụ Pháp lý: Tối Ưu Hóa Hiệu Suất và Quản Lý Rủi Ro Toàn Diện"
 description: "Khám phá cách AIOps giúp các tổ chức pháp lý tăng cường hiệu quả vận hành, giảm thiểu rủi ro, nâng cao bảo mật và đưa ra quyết định sáng suốt hơn trong kỷ nguyên số."
 tags: ['articles']
-date: 2026-03-12T15:42:41.308Z
+date: 2026-03-12T16:07:37.164Z
 permalink: "/vi/aiops-for-legal-services/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1551288049-bbbda595c7a8?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1504384308090-c89eec2488e1?auto=format&fit=crop&w=800&q=80"
 ---
 
 ## Giới thiệu: Nhu cầu cấp thiết về sự đổi mới trong dịch vụ pháp lý

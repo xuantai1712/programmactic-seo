@@ -2,7 +2,7 @@
 title: "AIOps cho Các Cơ quan Chính phủ: Nâng cao Hiệu quả và Độ tin cậy trong Vận hành CNTT"
 description: "Khám phá cách AIOps giúp các cơ quan chính phủ tối ưu hóa vận hành CNTT, nâng cao khả năng giám sát, phát hiện sự cố và ra quyết định dựa trên dữ liệu, đảm bảo an ninh mạng và hiệu quả hoạt động."
 tags: ['articles']
-date: 2026-03-12T15:42:41.305Z
+date: 2026-03-12T16:07:37.162Z
 permalink: "/vi/aiops-for-government-agencies/index.html"
 layout: layouts/base.njk
 lang: vi

@@ -2,11 +2,11 @@
 title: "Khám Phá Sức Mạnh của Công Cụ AIOps Mã Nguồn Mở: Tối Ưu Hóa Vận Hành CNTT Hiện Đại"
 description: "Tìm hiểu các công cụ AIOps mã nguồn mở giúp tự động hóa, phát hiện sự cố nhanh chóng, tối ưu hiệu suất và giảm chi phí vận hành CNTT hiệu quả cho mọi doanh nghiệp."
 tags: ['articles']
-date: 2026-03-12T15:42:36.125Z
+date: 2026-03-12T16:07:01.321Z
 permalink: "/vi/open-source-aiops-tools/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1551288049-bbbda595c7a8?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Khám Phá Sức Mạnh của Công Cụ AIOps Mã Nguồn Mở: Tối Ưu Hóa Vận Hành CNTT Hiện Đại</h1>

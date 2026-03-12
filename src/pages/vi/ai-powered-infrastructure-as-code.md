@@ -2,11 +2,11 @@
 title: "Nâng Cao Quản Lý Hạ Tầng Với AI-Powered IaC: Hướng Dẫn Toàn Diện"
 description: "Khám phá cách AI-Powered IaC cách mạng hóa việc quản lý hạ tầng, tự động hóa quy trình, tối ưu hóa tài nguyên và tăng cường bảo mật. Tìm hiểu các nguyên tắc cốt lõi và lợi ích chuyển đổi."
 tags: ['articles']
-date: 2026-03-12T15:42:41.313Z
+date: 2026-03-12T16:07:37.170Z
 permalink: "/vi/ai-powered-infrastructure-as-code/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1504384308090-c89eec2488e1?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1551288049-bbbda595c7a8?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h2>Giới Thiệu: Kỷ Nguyên Mới Của Quản Lý Hạ Tầng</h2>

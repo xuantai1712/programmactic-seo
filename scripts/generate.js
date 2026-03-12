@@ -181,7 +181,7 @@ function injectAffiliatePlaceholder(markdown) {
 }
 
 function toFrontMatter(data, body, lang) {
-  // Pool of high-quality tech/AI Unsplash photo IDs
+  // Pool of high-quality tech/AI Unsplash photo IDs (vetted for stability)
   const techImages = [
     "1518770660439-4636190af475", // Circuits
     "1550751827-4bd374c3f58b", // Cyber
@@ -197,18 +197,23 @@ function toFrontMatter(data, body, lang) {
     "1620712943543-bcc4688e7485", // AI Brain
     "1677442136019-21780ecad995", // ChatGPT/AI
     "1460925895917-afdab827c52f", // Analytics
-    "1523961131990-5ea7c61b2107"  // Big Data
+    "1523961131990-5ea7c61b2107", // Big Data
+    "1504639725590-34d0984388bd", // Programming
+    "1558494949-ef010c7191ae", // Servers
+    "1510511459019-5da56fd73b8c"  // Tech background
   ];
   
-  // Dùng slug để tạo seed cho random, giúp ảnh ổn định không đổi mỗi lần build lại
-  const slug = data.slug || "";
+  // Dùng keyword để tạo hash cố định cho ảnh
+  const seed = data.title || "";
   let hash = 0;
-  for (let i = 0; i < slug.length; i++) {
-    hash = (hash << 5) - hash + slug.charCodeAt(i);
+  for (let i = 0; i < seed.length; i++) {
+    hash = (hash << 5) - hash + seed.charCodeAt(i);
     hash |= 0;
   }
   const index = Math.abs(hash) % techImages.length;
   const photoId = techImages[index];
+  
+  // Sử dụng định dạng URL trực tiếp từ images.unsplash.com cho tốc độ cao và ổn định
   const imageUrl = `https://images.unsplash.com/photo-${photoId}?auto=format&fit=crop&w=800&q=80`;
   
   const fm = [

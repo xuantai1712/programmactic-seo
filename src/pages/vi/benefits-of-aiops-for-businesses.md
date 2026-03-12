@@ -2,7 +2,7 @@
 title: "AIOps: Chìa Khóa Nâng Cao Hiệu Quả Vận Hành IT Và Phát Triển Bền Vững Cho Doanh Nghiệp"
 description: "AIOps giúp doanh nghiệp tối ưu hoạt động IT, dự đoán sự cố, giảm thời gian chết và nâng cao trải nghiệm khách hàng. Khám phá lợi ích AIOps cho hiệu suất và ổn định hệ thống."
 tags: ['articles']
-date: 2026-03-12T15:41:31.468Z
+date: 2026-03-12T16:07:01.319Z
 permalink: "/vi/benefits-of-aiops-for-businesses/index.html"
 layout: layouts/base.njk
 lang: vi

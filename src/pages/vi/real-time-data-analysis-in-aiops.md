@@ -2,11 +2,11 @@
 title: "Phân Tích Dữ Liệu Thời Gian Thực trong AIOps: Nâng Tầm Hiệu Quả Vận Hành IT"
 description: "Phân tích dữ liệu thời gian thực trong AIOps là chìa khóa phát hiện sự cố sớm, tối ưu hiệu suất và tự động hóa vận hành IT. Nâng cao sự ổn định, hiệu quả cho hệ thống."
 tags: ['articles']
-date: 2026-03-12T15:41:31.461Z
+date: 2026-03-12T16:07:01.311Z
 permalink: "/vi/real-time-data-analysis-in-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Giới Thiệu: Kỷ Nguyên Mới Của Vận Hành IT Với AIOps và Dữ Liệu Thời Gian Thực</h1>

@@ -2,11 +2,11 @@
 title: "Phát Hiện Bất Thường Bằng Học Máy: Tăng Cường Bảo Mật Trong Thế Giới Số"
 description: "Khám phá cách học máy cách mạng hóa việc phát hiện bất thường, từ an ninh mạng đến chống gian lận. Tìm hiểu các phương pháp, ứng dụng và lợi ích để bảo vệ hệ thống hiệu quả."
 tags: ['articles']
-date: 2026-03-12T15:41:31.462Z
+date: 2026-03-12T16:07:01.313Z
 permalink: "/vi/anomaly-detection-with-machine-learning/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Phát Hiện Bất Thường Bằng Học Máy: Tăng Cường Bảo Mật Trong Thế Giới Số</h1>

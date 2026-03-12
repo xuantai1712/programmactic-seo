@@ -2,11 +2,11 @@
 title: "AIOps trong Logistics và Chuỗi Cung Ứng: Nâng Tầm Hiệu Quả, Khả Năng Phục Hồi"
 description: "Khám phá cách AIOps biến đổi ngành logistics và chuỗi cung ứng bằng cách tăng cường khả năng hiển thị, tự động hóa thông minh và ra quyết định chủ động. Nâng cao hiệu suất hoạt động."
 tags: ['articles']
-date: 2026-03-12T15:42:41.304Z
+date: 2026-03-12T16:07:37.161Z
 permalink: "/vi/aiops-for-logistics-and-supply-chain/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1551288049-bbbda595c7a8?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>AIOps trong Logistics và Chuỗi Cung Ứng: Nâng Tầm Hiệu Quả, Khả Năng Phục Hồi</h1>

@@ -2,11 +2,11 @@
 title: "AIOps trong Quản lý Đám mây Lai: Tối ưu Hóa Vận hành và Hiệu suất Hệ thống"
 description: "Khám phá cách AIOps cách mạng hóa quản lý đám mây lai, tự động hóa vận hành, phát hiện sự cố nhanh chóng và tối ưu hóa hiệu suất. Nâng cao khả năng phục hồi và hiệu quả hệ thống."
 tags: ['articles']
-date: 2026-03-12T15:41:31.466Z
+date: 2026-03-12T16:07:01.317Z
 permalink: "/vi/aiops-for-hybrid-cloud-management/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h2>Giới thiệu</h2>

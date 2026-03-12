@@ -2,7 +2,7 @@
 title: "Giám Sát Mạng Bằng AI: Tối Ưu Hiệu Suất và Bảo Mật Trong Kỷ Nguyên Số"
 description: "Khám phá cách giám sát mạng bằng AI biến đổi hoạt động, tăng cường bảo mật và tối ưu hóa hiệu suất mạng cho doanh nghiệp hiện đại. Nâng cao trải nghiệm người dùng."
 tags: ['articles']
-date: 2026-03-12T15:41:31.464Z
+date: 2026-03-12T16:07:01.314Z
 permalink: "/vi/ai-driven-network-monitoring/index.html"
 layout: layouts/base.njk
 lang: vi

@@ -2,11 +2,11 @@
 title: "Xây Dựng Chiến Lược Triển Khai AIOps Toàn Diện: Lộ Trình Thành Công Cho Vận Hành IT"
 description: "Khám phá chiến lược triển khai AIOps toàn diện để tối ưu hóa vận hành IT, nâng cao hiệu quả giám sát và tự động hóa. Hướng dẫn từng bước cho doanh nghiệp."
 tags: ['articles']
-date: 2026-03-12T15:41:31.468Z
+date: 2026-03-12T16:07:01.320Z
 permalink: "/vi/aiops-implementation-strategy/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Xây Dựng Chiến Lược Triển Khai AIOps Toàn Diện: Lộ Trình Thành Công Cho Vận Hành IT</h1>

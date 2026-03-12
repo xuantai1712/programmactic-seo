@@ -2,11 +2,11 @@
 title: "Machine Learning trong ITOps: Tối Ưu Hóa Vận Hành CNTT Thời Đại Số"
 description: "Khám phá cách Machine Learning biến đổi ITOps, giúp phát hiện sự cố sớm, dự đoán rủi ro và tự động hóa tác vụ, tối ưu hiệu suất hệ thống và giảm chi phí vận hành."
 tags: ['articles']
-date: 2026-03-12T15:41:31.460Z
+date: 2026-03-12T16:07:01.309Z
 permalink: "/vi/machine-learning-for-itops/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1504384308090-c89eec2488e1?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Machine Learning trong ITOps: Tối Ưu Hóa Vận Hành CNTT Thời Đại Số</h1>

@@ -2,11 +2,11 @@
 title: "Công Cụ Tự Động Hóa Hạ Tầng Đám Mây: Chìa Khóa Tăng Trưởng Cho Doanh Nghiệp Hiện Đại"
 description: "Khám phá các công cụ tự động hóa hạ tầng đám mây giúp doanh nghiệp tăng hiệu quả, giảm rủi ro, tối ưu chi phí và tăng tốc đổi mới trong môi trường điện toán đám mây."
 tags: ['articles']
-date: 2026-03-12T15:42:02.322Z
+date: 2026-03-12T16:07:01.313Z
 permalink: "/vi/cloud-infrastructure-automation-tools/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1504384308090-c89eec2488e1?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h2>Giới Thiệu Về Tự Động Hóa Hạ Tầng Đám Mây</h2>

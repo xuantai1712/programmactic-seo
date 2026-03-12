@@ -2,11 +2,11 @@
 title: "AIOps trong Giáo Dục: Nâng Cao Hiệu Quả Vận Hành CNTT và Trải Nghiệm Học Tập Số"
 description: "Khám phá cách AIOps giúp các tổ chức giáo dục hiện đại hóa quản lý CNTT, tăng cường hiệu quả vận hành, đảm bảo tính liên tục và cải thiện trải nghiệm số cho sinh viên, giảng viên."
 tags: ['articles']
-date: 2026-03-12T15:42:41.306Z
+date: 2026-03-12T16:07:37.162Z
 permalink: "/vi/aiops-for-educational-institutions/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h2>Giới Thiệu: Chuyển Đổi Số và Nhu Cầu Quản Lý CNTT Thông Minh trong Giáo Dục</h2>

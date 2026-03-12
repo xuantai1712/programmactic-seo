@@ -178,11 +178,17 @@ eleventyComputed:
     {# Phân trang thực tế #}
     {% set all_articles = collections.articles | filterByLang(lang) | reverse %}
     {% set items_per_page = 12 %}
-    
-    {% for item in all_articles %}
-      {% if loop.index0 < items_per_page %}
+    {% set total_pages = (all_articles.length / items_per_page) | round(0, "ceil") %}
+    {% set offset = pagination.pageNumber * items_per_page %}
+    {% set paged_items = all_articles.slice(offset, offset + items_per_page) %}
+
+    {% for item in paged_items %}
       <a href="{{ item.url }}" class="card">
-        <img src="{{ item.data.image or 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80' }}" alt="{{ item.data.title }}" class="card-image" loading="lazy">
+        <img src="{{ item.data.image or 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80' }}" 
+             alt="{{ item.data.title }}" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
         <div class="card-content">
           <div class="card-tag">{{ item.data.category or 'AiOps' }}</div>
           <h3 class="card-title">{{ item.data.title or item.fileSlug }}</h3>
@@ -196,9 +202,29 @@ eleventyComputed:
           </div>
         </div>
       </a>
-      {% endif %}
     {% endfor %}
   </div>
 
-  {# Bỏ Pagination Nav tạm thời vì pSEO đơn giản không cần phân trang phức tạp #}
+  {# Pagination Nav #}
+  {% if total_pages > 1 %}
+  <nav class="pagination-nav">
+    {% if pagination.pageNumber > 0 %}
+      <a href="/{{ lang }}/{% if pagination.pageNumber > 1 %}trang-{{ pagination.pageNumber }}/{% endif %}index.html" class="pagination-link">
+        &larr; {{ 'Trước' if lang == 'vi' else 'Prev' }}
+      </a>
+    {% endif %}
+
+    {% for i in range(0, total_pages) %}
+      <a href="/{{ lang }}/{% if i > 0 %}trang-{{ i + 1 }}/{% endif %}index.html" class="pagination-link {{ 'active' if i == pagination.pageNumber }}">
+        {{ i + 1 }}
+      </a>
+    {% endfor %}
+
+    {% if pagination.pageNumber < total_pages - 1 %}
+      <a href="/{{ lang }}/trang-{{ pagination.pageNumber + 2 }}/index.html" class="pagination-link">
+        {{ 'Sau' if lang == 'vi' else 'Next' }} &rarr;
+      </a>
+    {% endif %}
+  </nav>
+  {% endif %}
 </section>

@@ -2,11 +2,11 @@
 title: "Bảo Mật Mạng Với Trí Tuệ Nhân Tạo: Tăng Cường Phòng Thủ Trong Kỷ Nguyên Số"
 description: "Khám phá cách Trí Tuệ Nhân Tạo (AI) cách mạng hóa bảo mật mạng, từ phát hiện mối đe dọa đến phản ứng tự động. Nâng cao khả năng phòng thủ của bạn."
 tags: ['articles']
-date: 2026-03-12T15:43:06.278Z
+date: 2026-03-12T16:07:37.170Z
 permalink: "/vi/ai-powered-network-security/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h2>Giới Thiệu: AI và Tương Lai Của Bảo Mật Mạng</h2>

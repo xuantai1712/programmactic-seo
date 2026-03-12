@@ -2,11 +2,11 @@
 title: "Tối Ưu Hóa SEO Website: Chiến Lược Toàn Diện Cho Tăng Trưởng Bền Vững Trực Tuyến"
 description: "Khám phá chiến lược tối ưu hóa SEO website toàn diện để cải thiện thứ hạng tìm kiếm, thu hút lượng truy cập chất lượng và đạt được tăng trưởng bền vững cho doanh nghiệp trực tuyến của bạn."
 tags: ['articles']
-date: 2026-03-12T15:41:31.452Z
+date: 2026-03-12T16:07:01.305Z
 permalink: "/vi/keyword/index.html"
 layout: layouts/base.njk
 lang: vi
-image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80"
 ---
 
 ## Giới Thiệu Về Tối Ưu Hóa SEO Website

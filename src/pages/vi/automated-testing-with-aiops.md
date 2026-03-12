@@ -2,7 +2,7 @@
 title: "Kiểm Thử Tự Động Với AIOps: Nâng Tầm Chất Lượng Phần Mềm Trong Kỷ Nguyên Số"
 description: "Khám phá cách AIOps cách mạng hóa kiểm thử tự động, tối ưu hiệu suất và phát hiện lỗi nhanh chóng. Nâng cao chất lượng phần mềm, giảm thiểu rủi ro và tăng cường hiệu quả vận hành."
 tags: ['articles']
-date: 2026-03-12T15:42:41.310Z
+date: 2026-03-12T16:07:37.168Z
 permalink: "/vi/automated-testing-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
