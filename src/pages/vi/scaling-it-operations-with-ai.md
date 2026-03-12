@@ -2,10 +2,11 @@
 title: "Nâng Cấp Vận Hành CNTT: Hướng Dẫn Mở Rộng Hiệu Quả Với Trí Tuệ Nhân Tạo"
 description: "Khám phá cách AI giúp mở rộng vận hành CNTT, tối ưu hóa hiệu suất, giảm thiểu rủi ro và tăng cường khả năng phục hồi. Cẩm nang chi tiết về triển khai AIOps hiệu quả."
 tags: ['articles']
-date: 2026-03-12T14:53:48.343Z
+date: 2026-03-12T15:17:54.058Z
 permalink: "/vi/scaling-it-operations-with-ai/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000535?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Nâng Cấp Vận Hành CNTT: Hướng Dẫn Mở Rộng Hiệu Quả Với Trí Tuệ Nhân Tạo</h1>

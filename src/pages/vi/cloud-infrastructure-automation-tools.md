@@ -2,10 +2,11 @@
 title: "Giải Mã Sức Mạnh: Hướng Dẫn Toàn Diện Về Các Công Cụ Tự Động Hóa Hạ Tầng Đám Mây"
 description: "Khám phá các công cụ tự động hóa hạ tầng đám mây giúp tăng hiệu quả, độ tin cậy và tối ưu chi phí. Hướng dẫn chọn lựa giải pháp phù hợp cho doanh nghiệp bạn."
 tags: ['articles']
-date: 2026-03-12T14:53:42.770Z
+date: 2026-03-12T15:17:58.171Z
 permalink: "/vi/cloud-infrastructure-automation-tools/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000713?auto=format&fit=crop&w=800&q=80"
 ---
 
 ## Giải Mã Sức Mạnh: Hướng Dẫn Toàn Diện Về Các Công Cụ Tự Động Hóa Hạ Tầng Đám Mây

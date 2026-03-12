@@ -2,10 +2,11 @@
 title: "Tối Ưu Hóa Vận Hành IT Với AI: Cách Trí Tuệ Nhân Tạo Biến Đổi Hoạt Động CNTT"
 description: "Khám phá cách AI cách mạng hóa vận hành IT (AIOps), từ tự động hóa tác vụ, phát hiện bất thường đến phân tích nguyên nhân gốc rễ, nâng cao hiệu quả và độ tin cậy hệ thống."
 tags: ['articles']
-date: 2026-03-12T14:53:42.769Z
+date: 2026-03-12T15:17:58.166Z
 permalink: "/vi/how-ai-improves-it-operations/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000603?auto=format&fit=crop&w=800&q=80"
 ---
 
 ## Giới Thiệu: AIOps – Tương Lai Của Vận Hành IT

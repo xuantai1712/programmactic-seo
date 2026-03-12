@@ -181,6 +181,8 @@ function injectAffiliatePlaceholder(markdown) {
 }
 
 function toFrontMatter(data, body, lang) {
+  const imageId = Math.floor(Math.random() * 1000);
+  const imageUrl = `https://images.unsplash.com/photo-${1600000000000 + imageId}?auto=format&fit=crop&w=800&q=80`;
   const fm = [
     "---",
     `title: "${(data.title || "").replace(/\"/g, '\\"')}"`,
@@ -190,6 +192,7 @@ function toFrontMatter(data, body, lang) {
     `permalink: "/${lang}/${data.slug}/index.html"`,
     "layout: layouts/base.njk",
     `lang: ${lang}`,
+    `image: "${imageUrl}"`,
     "---",
     "",
     body,

@@ -2,10 +2,11 @@
 title: "Phân Tích Log Bằng AI: Chìa Khóa Tối Ưu Vận Hành và Bảo Mật Hệ Thống"
 description: "Khám phá cách phân tích log bằng AI giúp doanh nghiệp phát hiện sự cố, tăng cường bảo mật và tối ưu hiệu suất hệ thống một cách hiệu quả. Tìm hiểu ngay!"
 tags: ['articles']
-date: 2026-03-12T14:53:42.771Z
+date: 2026-03-12T15:17:58.173Z
 permalink: "/vi/ai-powered-log-analysis/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000918?auto=format&fit=crop&w=800&q=80"
 ---
 
 Trong bối cảnh công nghệ thông tin phát triển nhanh chóng, mọi hệ thống, từ ứng dụng web đơn giản đến cơ sở hạ tầng đám mây phức tạp, đều tạo ra một lượng lớn dữ liệu nhật ký (log data). Dữ liệu log là kho tàng thông tin vô giá, ghi lại mọi sự kiện, hoạt động và trạng thái của hệ thống. Từ các yêu cầu của người dùng, giao dịch cơ sở dữ liệu, đến các lỗi hệ thống và nỗ lực truy cập trái phép, tất cả đều được lưu lại trong log. Phân tích log truyền thống, dựa vào con người và công cụ tìm kiếm đơn giản, ngày càng kém hiệu quả khi đối mặt với quy mô và độ phức tạp của dữ liệu hiện đại.

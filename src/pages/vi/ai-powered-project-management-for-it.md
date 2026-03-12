@@ -2,10 +2,11 @@
 title: "Quản Lý Dự Án IT Dựa trên AI: Chìa Khóa Tối Ưu Hóa Hiệu Suất và Đổi Mới"
 description: "Khám phá cách trí tuệ nhân tạo biến đổi quản lý dự án IT, nâng cao hiệu suất, tối ưu nguồn lực và giảm thiểu rủi ro. Tìm hiểu giải pháp AI PM phù hợp cho doanh nghiệp bạn."
 tags: ['articles']
-date: 2026-03-12T14:53:53.745Z
+date: 2026-03-12T15:17:59.708Z
 permalink: "/vi/ai-powered-project-management-for-it/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000298?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Quản Lý Dự Án IT Dựa trên AI: Chìa Khóa Tối Ưu Hóa Hiệu Suất và Đổi Mới</h1>

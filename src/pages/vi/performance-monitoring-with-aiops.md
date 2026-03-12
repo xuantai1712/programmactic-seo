@@ -2,10 +2,11 @@
 title: "Giám sát Hiệu năng với AIOps: Nâng tầm Quản lý Vận hành trong Kỷ nguyên Số"
 description: "Khám phá cách AIOps chuyển đổi giám sát hiệu năng truyền thống, giúp phát hiện bất thường, phân tích nguyên nhân gốc rễ và tự động hóa để vận hành hiệu quả hơn."
 tags: ['articles']
-date: 2026-03-12T14:53:42.774Z
+date: 2026-03-12T15:17:58.178Z
 permalink: "/vi/performance-monitoring-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000622?auto=format&fit=crop&w=800&q=80"
 ---
 
 Trong bối cảnh công nghệ thông tin ngày càng phát triển phức tạp, việc đảm bảo hiệu năng tối ưu cho các hệ thống và ứng dụng là một thách thức không ngừng đối với các tổ chức. Từ cơ sở hạ tầng vật lý đến các ứng dụng đám mây phân tán, khối lượng dữ liệu vận hành khổng lồ và sự phụ thuộc vào các quy trình thủ công đã khiến việc giám sát hiệu năng truyền thống trở nên quá tải và kém hiệu quả. Đây chính là lúc AIOps (Trí tuệ Nhân tạo cho Vận hành CNTT) nổi lên như một giải pháp đột phá, hứa hẹn sẽ cách mạng hóa cách chúng ta tiếp cận và quản lý hiệu năng hệ thống.

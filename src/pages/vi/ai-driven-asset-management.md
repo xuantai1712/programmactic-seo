@@ -2,10 +2,11 @@
 title: "Quản Lý Tài Sản Bằng AI: Đột Phá Hiệu Suất và Tối Ưu Hóa Đầu Tư"
 description: "Khám phá cách AI thay đổi ngành quản lý tài sản, mang lại hiệu quả vượt trội, phân tích sâu sắc và quản lý rủi ro thông minh. Nâng tầm chiến lược đầu tư của bạn."
 tags: ['articles']
-date: 2026-03-12T14:53:48.350Z
+date: 2026-03-12T15:17:59.709Z
 permalink: "/vi/ai-driven-asset-management/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000193?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h2>Giới Thiệu: Kỷ Nguyên Mới Của Quản Lý Tài Sản Với Trí Tuệ Nhân Tạo</h2>

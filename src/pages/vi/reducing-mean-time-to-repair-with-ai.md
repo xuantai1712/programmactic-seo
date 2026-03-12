@@ -2,10 +2,11 @@
 title: "Giảm Thời Gian Khắc Phục Trung Bình (MTTR) Với AI: Hướng Dẫn Toàn Diện"
 description: "Khám phá cách AI và AIOps cách mạng hóa việc giảm MTTR, cải thiện độ ổn định hệ thống và tối ưu hóa vận hành CNTT. Hướng dẫn chi tiết cho doanh nghiệp."
 tags: ['articles']
-date: 2026-03-12T14:53:42.773Z
+date: 2026-03-12T15:17:58.174Z
 permalink: "/vi/reducing-mean-time-to-repair-with-ai/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000408?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>Giảm Thời Gian Khắc Phục Trung Bình (MTTR) Với AI: Hướng Dẫn Toàn Diện</h1>

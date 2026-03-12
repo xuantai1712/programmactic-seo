@@ -73,6 +73,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy("src/*.html");
+  eleventyConfig.addPassthroughCopy("src/CNAME");
 
   eleventyConfig.addTransform("inject-monetization", function (content, outputPath) {
     if (outputPath && outputPath.endsWith(".html")) {

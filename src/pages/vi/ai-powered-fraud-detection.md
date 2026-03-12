@@ -2,10 +2,11 @@
 title: "Phát Hiện Gian Lận Bằng AI: Tối Ưu Bảo Mật và Nâng Cao Hiệu Quả Kinh Doanh"
 description: "Khám phá giải pháp phát hiện gian lận bằng AI giúp doanh nghiệp bảo vệ tài sản, giảm thiểu rủi ro và tối ưu hoạt động. Nâng cao an ninh với công nghệ tiên tiến."
 tags: ['articles']
-date: 2026-03-12T14:53:59.125Z
+date: 2026-03-12T15:17:59.706Z
 permalink: "/vi/ai-powered-fraud-detection/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000985?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h2>Giới Thiệu Về Phát Hiện Gian Lận Bằng AI</h2>

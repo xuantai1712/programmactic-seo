@@ -2,10 +2,11 @@
 title: "AIOps trong Quản Lý Dữ Liệu Y Tế: Chìa Khóa Nâng Cao Hiệu Quả và An Toàn Vận Hành"
 description: "Khám phá cách AIOps biến đổi quản lý dữ liệu y tế, nâng cao hiệu quả vận hành, đảm bảo bảo mật và tuân thủ. Tìm hiểu lợi ích và chiến lược triển khai."
 tags: ['articles']
-date: 2026-03-12T14:53:48.345Z
+date: 2026-03-12T15:17:54.051Z
 permalink: "/vi/aiops-for-healthcare-data-management/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000842?auto=format&fit=crop&w=800&q=80"
 ---
 
 ## Giới Thiệu: Chuyển Đổi Số và Nhu Cầu Quản Lý Dữ Liệu Y Tế Hiện Đại

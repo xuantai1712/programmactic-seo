@@ -2,10 +2,11 @@
 title: "AIOps và Giám Sát Máy Ảo: Chuyển Đổi Vận Hành Hạ Tầng Số"
 description: "Khám phá cách AIOps cách mạng hóa giám sát máy ảo, cung cấp thông tin chuyên sâu chủ động, tự động hóa thông minh và nâng cao hiệu quả hoạt động cho môi trường CNTT phức tạp."
 tags: ['articles']
-date: 2026-03-12T14:53:53.748Z
+date: 2026-03-12T15:18:57.193Z
 permalink: "/vi/monitoring-virtual-machines-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000784?auto=format&fit=crop&w=800&q=80"
 ---
 
 <h1>AIOps và Giám Sát Máy Ảo: Chuyển Đổi Vận Hành Hạ Tầng Số</h1>

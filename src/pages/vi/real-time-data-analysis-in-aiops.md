@@ -2,10 +2,11 @@
 title: "Tối Ưu Hóa Vận Hành CNTT: Vai Trò Của Phân Tích Dữ Liệu Thời Gian Thực Trong AIOps"
 description: "Khám phá cách phân tích dữ liệu thời gian thực trong AIOps giúp nâng cao hiệu quả vận hành CNTT, phát hiện sự cố nhanh chóng và tự động hóa quy trình. Tìm hiểu lợi ích và thách thức."
 tags: ['articles']
-date: 2026-03-12T14:53:42.770Z
+date: 2026-03-12T15:17:58.170Z
 permalink: "/vi/real-time-data-analysis-in-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000350?auto=format&fit=crop&w=800&q=80"
 ---
 
 ## Giới Thiệu: AIOps và Sức Mạnh Của Dữ Liệu Thời Gian Thực

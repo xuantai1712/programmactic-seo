@@ -2,10 +2,11 @@
 title: "Chuyển Đổi Số Với AIOps: Tối Ưu Vận Hành CNTT và Thúc Đẩy Đổi Mới Doanh Nghiệp"
 description: "Khám phá cách AIOps thúc đẩy chuyển đổi số, tự động hóa vận hành CNTT, nâng cao hiệu suất và mang lại giá trị bền vững cho doanh nghiệp trong kỷ nguyên số."
 tags: ['articles']
-date: 2026-03-12T14:53:42.773Z
+date: 2026-03-12T15:17:58.176Z
 permalink: "/vi/digital-transformation-with-aiops/index.html"
 layout: layouts/base.njk
 lang: vi
+image: "https://images.unsplash.com/photo-1600000000921?auto=format&fit=crop&w=800&q=80"
 ---
 
 ## Giới Thiệu: Chuyển Đổi Số và Vai Trò Của AIOps
