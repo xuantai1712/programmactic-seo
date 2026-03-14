@@ -10,14 +10,41 @@
   <link rel="alternate" hreflang="x-default" href="{{ site.url }}/vi{{ page.url | replace('/en/', '/') | replace('/vi/', '/') }}" />
   {% if description %}<meta name="description" content="{{ description | escape }}" />{% endif %}
   {% if site.googleVerification %}<meta name="google-site-verification" content="{{ site.googleVerification }}" />{% endif %}
+  <meta name='impact-site-verification' value='72803f8a-5095-417a-bef2-d7580cda2732'>
   <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ title | escape }}" />
   <meta property="og:description" content="{{ description | escape }}" />
   <meta property="og:url" content="{{ canonical }}" />
   <meta property="og:site_name" content="{{ site.name | escape }}" />
+  <meta property="og:image" content="{{ image or 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80' }}" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="{{ title | escape }}" />
   {% if description %}<meta name="twitter:description" content="{{ description | escape }}" />{% endif %}
+  <meta name="twitter:image" content="{{ image or 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=1200&q=80' }}" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "{{ title | escape }}",
+    "description": "{{ description | escape }}",
+    "image": "{{ image or 'https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80' }}",
+    "author": {
+      "@type": "Organization",
+      "name": "AiOps Bridge Team"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "{{ site.name }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/assets/logo.png"
+      }
+    },
+    "datePublished": "{{ date | date('yyyy-MM-dd') }}",
+    "inLanguage": "{{ lang or 'vi' }}"
+  }
+  </script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -160,6 +187,24 @@
       text-align: center;
     }
 
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px 16px;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-main);
+      text-decoration: underline;
+    }
+
     .btn {
       display: inline-block;
       padding: 12px 24px;
@@ -207,6 +252,13 @@
 
   <footer>
     <div class="container footer-content">
+      {% set footerLang = lang or 'vi' %}
+      <div class="footer-links">
+        <a href="/{{ footerLang }}/about/">{{ 'Giới thiệu' if footerLang == 'vi' else 'About' }}</a>
+        <a href="/{{ footerLang }}/contact/">{{ 'Liên hệ' if footerLang == 'vi' else 'Contact' }}</a>
+        <a href="/{{ footerLang }}/privacy-policy/">{{ 'Quyền riêng tư' if footerLang == 'vi' else 'Privacy' }}</a>
+        <a href="/{{ footerLang }}/affiliate-disclosure/">{{ 'Tiếp thị liên kết' if footerLang == 'vi' else 'Affiliate' }}</a>
+      </div>
       <div>&copy; {{ "now" | date("yyyy") }} <strong>{{ site.name }}</strong>. All rights reserved.</div>
       <div style="font-size: 0.8rem;">Powered by AiOps Bridge Technology</div>
     </div>

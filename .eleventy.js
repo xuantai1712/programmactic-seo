@@ -20,8 +20,11 @@ module.exports = function (eleventyConfig) {
     if (!html || typeof html !== "string") return html;
     let out = html;
 
+    let finalAffiliateHTML = (affiliateHTML || "").replace(/\{\{ADSENSE_CLIENT\}\}/g, process.env.ADSENSE_CLIENT || "");
+    let finalAdsenseHTML = (adsenseHTML || "").replace(/\{\{ADSENSE_CLIENT\}\}/g, process.env.ADSENSE_CLIENT || "");
+
     if (out.includes("<!-- AFFILIATE_PLACEHOLDER -->")) {
-      out = out.replace("<!-- AFFILIATE_PLACEHOLDER -->", affiliateHTML || "");
+      out = out.replace("<!-- AFFILIATE_PLACEHOLDER -->", finalAffiliateHTML);
     } else {
       let idx = -1;
       let count = 0;
@@ -35,16 +38,16 @@ module.exports = function (eleventyConfig) {
         }
       }
       if (idx !== -1) {
-        out = out.slice(0, idx) + (affiliateHTML || "") + out.slice(idx);
+        out = out.slice(0, idx) + finalAffiliateHTML + out.slice(idx);
       }
     }
 
-    if (adsenseHTML) {
+    if (finalAdsenseHTML) {
       const bodyClose = out.lastIndexOf("</body>");
       if (bodyClose !== -1) {
-        out = out.slice(0, bodyClose) + adsenseHTML + "\n" + out.slice(bodyClose);
+        out = out.slice(0, bodyClose) + finalAdsenseHTML + "\n" + out.slice(bodyClose);
       } else {
-        out = out + "\n" + adsenseHTML;
+        out = out + "\n" + finalAdsenseHTML;
       }
     }
     return out;
