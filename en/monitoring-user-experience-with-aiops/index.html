@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>User experience (UX) stands as a paramount differentiator in today's competitive digital landscape. A seamless, intuitive, and responsive experience is no longer a luxury but a fundamental expectation for users interacting with applications and services. While traditional monitoring tools have long focused on system health and performance metrics, truly understanding and optimizing the user journey demands a more sophisticated, intelligent approach.</p>
 <p>Enter AIOps – Artificial Intelligence for IT Operations. This transformative discipline is revolutionizing how organizations monitor, manage, and optimize their IT environments. By applying advanced analytics and machine learning to vast amounts of operational data, AIOps provides the intelligence needed to move beyond reactive problem-solving and towards proactive user experience management.</p>
 <h3>The Evolution of UX Monitoring</h3>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Monitoring has evolved significantly over the years. Initially, the focus was primarily on infrastructure uptime and basic application performance metrics, ensuring systems were operational. As digital services became more complex and user expectations grew, the emphasis shifted towards Application Performance Monitoring (APM) and Real User Monitoring (RUM), aiming to capture data directly from user interactions.</p>

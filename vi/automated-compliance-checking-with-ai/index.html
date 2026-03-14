@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -250,10 +288,11 @@
 <p>Sự ra đời của Trí tuệ Nhân tạo (AI) và các công nghệ tự động hóa đã mở ra một kỷ nguyên mới cho việc quản lý tuân thủ. Kiểm tra tuân thủ tự động với AI không chỉ hứa hẹn giải quyết những thách thức cố hữu mà còn mang lại khả năng phân tích sâu rộng, phát hiện rủi ro tiềm ẩn và tối ưu hóa toàn bộ quy trình một cách chưa từng có. Bài viết này sẽ đi sâu vào cách AI và tự động hóa đang định hình lại lĩnh vực tuân thủ, mang lại những lợi ích vượt trội và những cân nhắc quan trọng khi triển khai.</p>
 <h2>Sự Phát Triển Của Kiểm Tra Tuân Thủ Truyền Thống</h2>
 Trong nhiều thập kỷ, kiểm tra tuân thủ chủ yếu dựa vào các quy trình thủ công và bán thủ công. Các chuyên gia tuân thủ phải dành nhiều thời gian để xem xét tài liệu, đối chiếu dữ liệu, phỏng vấn các bên liên quan và theo dõi các thay đổi quy định. Mặc dù cần thiết, phương pháp này thường đối mặt với nhiều hạn chế cố hữu.
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Thứ nhất, nó cực kỳ tốn thời gian và nguồn lực. Việc xử lý một lượng lớn thông tin và tài liệu, đặc biệt trong các tổ chức lớn hoặc các ngành nghề có quy định chặt chẽ, đòi hỏi một đội ngũ nhân sự đáng kể. Thứ hai, yếu tố con người luôn tiềm ẩn nguy cơ sai sót. Sự mệt mỏi, thiếu tập trung hoặc bỏ sót thông tin có thể dẫn đến việc không phát hiện được các vi phạm, gây ra hậu quả nghiêm trọng. Thứ ba, khả năng mở rộng của các quy trình thủ công là rất hạn chế. Khi tổ chức phát triển hoặc khi có nhiều quy định mới được ban hành, việc duy trì và tăng cường năng lực kiểm tra tuân thủ trở thành một gánh nặng lớn.</p>

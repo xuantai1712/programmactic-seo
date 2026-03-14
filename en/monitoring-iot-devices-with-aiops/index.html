@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>The Internet of Things (IoT) has rapidly expanded, permeating nearly every industry from smart cities and healthcare to manufacturing and agriculture. This proliferation of connected devices generates an unprecedented volume and variety of data, offering immense potential for innovation and efficiency. However, managing and monitoring these vast, distributed IoT ecosystems presents significant challenges. Traditional monitoring tools often struggle to keep pace with the scale, complexity, and dynamic nature of IoT environments, leading to potential downtime, security vulnerabilities, and operational inefficiencies.</p>
 <p>This is where Artificial Intelligence for IT Operations (AIOps) emerges as a transformative solution. By leveraging advanced analytics, machine learning, and artificial intelligence, AIOps provides a sophisticated framework to automate and enhance the monitoring, analysis, and management of IT and operational data. When applied to IoT, AIOps offers a powerful approach to move beyond reactive problem-solving towards proactive, predictive, and even prescriptive operations, ensuring the reliability, performance, and security of IoT devices at scale.</p>
 <h2>The Evolution of IoT Monitoring</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Initially, IoT device monitoring relied on basic dashboards and rule-based alerts. As the number of devices grew, so did the complexity. Monitoring hundreds, then thousands, and now potentially millions of devices meant sifting through countless logs, metrics, and events. This manual or semi-manual approach quickly became unsustainable, leading to:</p>

@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh kỹ thuật số ngày càng phát triển, ngành dịch vụ tài chính đang đối mặt với những thách thức chưa từng có. Từ khối lượng giao dịch khổng lồ, yêu cầu bảo mật nghiêm ngặt đến sự phức tạp của hạ tầng công nghệ thông tin (CNTT) đa dạng, các tổ chức tài chính cần những giải pháp tiên tiến để duy trì sự ổn định, hiệu quả và khả năng cạnh tranh. Công nghệ AIOps (Artificial Intelligence for IT Operations) nổi lên như một yếu tố thay đổi cuộc chơi, mang đến khả năng chuyển đổi cách thức vận hành CNTT truyền thống.</p>
 <p>AIOps kết hợp sức mạnh của dữ liệu lớn, học máy (machine learning) và tự động hóa để cung cấp cái nhìn sâu sắc, dự đoán và hành động tự động trong môi trường CNTT. Đối với ngành tài chính, nơi mà thời gian chết dù chỉ là vài giây cũng có thể gây ra thiệt hại đáng kể và ảnh hưởng đến uy tín, AIOps không chỉ là một công cụ tiện ích mà còn là một chiến lược thiết yếu để đảm bảo hoạt động liên tục, phát hiện và ngăn chặn các mối đe dọa tiềm tàng, đồng thời tối ưu hóa trải nghiệm khách hàng.</p>
 <p>Bài viết này sẽ đi sâu vào việc AIOps là gì, tại sao nó lại quan trọng đối với ngành dịch vụ tài chính, những lợi ích chính mà nó mang lại, các trường hợp ứng dụng cụ thể, cũng như những thách thức cần vượt qua và các bước để triển khai thành công.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>AIOps là gì? Một Tổng Quan Ngắn Gọn</h2>

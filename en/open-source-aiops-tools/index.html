@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -250,10 +288,11 @@
 <p>While proprietary AIOps solutions offer robust capabilities, the open-source ecosystem presents a compelling alternative, especially for commercial entities seeking flexibility, transparency, and cost-effectiveness. Open-source AIOps tools provide a powerful foundation for building resilient, intelligent IT operations frameworks without the initial licensing burdens often associated with commercial offerings. This article delves into the strategic considerations for adopting open-source AIOps, exploring its benefits, key functionalities, and practical implementation strategies for businesses aiming to optimize their operational efficiency and drive innovation.</p>
 <h2>Understanding AIOps in a Commercial Context</h2>
 At its core, AIOps is about applying advanced analytical techniques and machine learning algorithms to IT operational data. This encompasses a wide spectrum of information, including logs, metrics, traces, events, and configuration data. The primary objective is to move beyond reactive incident management to a proactive, predictive, and even prescriptive operational model. For commercial organizations, the implications are profound.
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>centimetre AIOps addresses critical pain points such as alert fatigue, slow root cause analysis, and the inability to correlate disparate data points across complex systems. By automating data ingestion, analysis, and response, AIOps empowers IT teams to shift their focus from firefighting to strategic initiatives. It enhances observability, providing a comprehensive view of system health and performance, and facilitates faster, more accurate problem resolution. In a commercial setting, this translates directly into improved service availability, reduced operational expenditure, and a stronger foundation for digital transformation initiatives. The ability to anticipate issues before they impact customers or business processes is a significant differentiator, safeguarding revenue streams and brand reputation.</p>

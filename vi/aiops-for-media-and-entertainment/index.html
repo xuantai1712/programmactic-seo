@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Ngành truyền thông và giải trí (M&amp;E) đang trải qua một giai đoạn chuyển đổi mạnh mẽ, được thúc đẩy bởi sự bùng nổ của nội dung số, các nền tảng phát trực tuyến, và sự thay đổi trong hành vi tiêu dùng của khán giả. Để duy trì tính cạnh tranh và đáp ứng kỳ vọng ngày càng cao, các doanh nghiệp trong lĩnh vực này phải đối mặt với những thách thức vận hành phức tạp, từ quản lý hạ tầng phân tán đến đảm bảo chất lượng trải nghiệm người dùng liên tục. Trong bối cảnh đó, AIOps (Artificial Intelligence for IT Operations) nổi lên như một giải pháp then chốt, mang lại khả năng tự động hóa, phân tích chuyên sâu và dự đoán để tối ưu hóa mọi khía cạnh của hoạt động công nghệ thông tin.</p>
 <h3>AIOps Là Gì?</h3>
 <p>AIOps là sự kết hợp giữa trí tuệ nhân tạo (AI) và các hoạt động công nghệ thông tin (IT Operations) nhằm nâng cao hiệu quả và khả năng phản ứng của hệ thống. Thay vì dựa vào các phương pháp giám sát thủ công hoặc dựa trên ngưỡng cảnh báo truyền thống, AIOps sử dụng các thuật toán học máy (Machine Learning) để thu thập, tổng hợp và phân tích một lượng lớn dữ liệu vận hành từ nhiều nguồn khác nhau. Dữ liệu này bao gồm nhật ký (logs), số liệu (metrics), dấu vết (traces) và các sự kiện khác từ ứng dụng, máy chủ, mạng và cơ sở hạ tầng đám mây.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Mục tiêu chính của AIOps là giảm thiểu sự phụ thuộc vào con người trong việc xác định và giải quyết các vấn đề IT, giảm thiểu thời gian chết, và cải thiện hiệu suất hệ thống. Bằng cách tự động hóa việc phát hiện bất thường, phân tích nguyên nhân gốc rễ và thậm chí đề xuất hoặc thực hiện các hành động khắc phục, AIOps giúp các đội ngũ vận hành chuyển từ phản ứng bị động sang chủ động và dự đoán.</p>

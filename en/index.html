@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -410,91 +448,6 @@
 
   <div class="grid">
     
-      <a href="/en/affiliate-disclosure/" class="card">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Affiliate Disclosure" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Affiliate Disclosure</h3>
-          <p class="card-excerpt">Transparency about affiliate links on the site.</p>
-          <div class="card-footer">
-            <span>2026-03-14</span>
-            <span class="read-more">
-              Read more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/en/privacy-policy/" class="card">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Privacy Policy" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Privacy Policy</h3>
-          <p class="card-excerpt">How we collect, use, and protect information.</p><div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
-</div>
-
-          <div class="card-footer">
-            <span>2026-03-14</span>
-            <span class="read-more">
-              Read more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/en/contact/" class="card">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Contact" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Contact</h3>
-          <p class="card-excerpt">How to contact and collaborate.</p>
-          <div class="card-footer">
-            <span>2026-03-14</span>
-            <span class="read-more">
-              Read more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/en/about/" class="card">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="About" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">About</h3>
-          <p class="card-excerpt">About AiOps Bridge and what this site publishes.</p>
-          <div class="card-footer">
-            <span>2026-03-14</span>
-            <span class="read-more">
-              Read more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
       <a href="/en/improving-software-quality-with-aiops/" class="card">
         <img src="https://images.unsplash.com/photo-1517077304055-6e89a382899b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
              alt="Elevating Software Quality: How AIOps Transforms Development and Operations" 
@@ -645,6 +598,86 @@
           <div class="card-tag">AiOps</div>
           <h3 class="card-title">Intelligent Operations: Enhancing Workflow Automation with AIOps</h3>
           <p class="card-excerpt">Explore how AIOps revolutionizes workflow automation in IT operations. Discover enhanced efficiency, faster incident resolution, and proactive problem-solving for robust, intelligent systems.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Read more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/en/optimizing-devops-pipeline-with-ai/" class="card">
+        <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="Optimizing DevOps Pipelines with AI: Strategies for Enhanced Efficiency and Reliability" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">Optimizing DevOps Pipelines with AI: Strategies for Enhanced Efficiency and Reliability</h3>
+          <p class="card-excerpt">Explore how Artificial Intelligence can revolutionize your DevOps pipeline. Learn strategies to enhance efficiency, automate tasks, predict issues, and improve software delivery with AI.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Read more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/en/improving-team-productivity-with-aiops/" class="card">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="Elevating Team Productivity: The Strategic Role of AIOps in Modern IT Operations" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">Elevating Team Productivity: The Strategic Role of AIOps in Modern IT Operations</h3>
+          <p class="card-excerpt">Discover how AIOps transforms IT operations, reducing manual tasks, streamlining issue resolution, and empowering teams to achieve greater efficiency and innovation.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Read more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/en/improving-operational-efficiency-with-aiops/" class="card">
+        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="Enhancing Operational Efficiency with AIOps: A Strategic Imperative for Modern IT" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">Enhancing Operational Efficiency with AIOps: A Strategic Imperative for Modern IT</h3>
+          <p class="card-excerpt">Discover how AIOps transforms IT operations by automating incident management, optimizing performance, and providing actionable insights for peak efficiency.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Read more
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/en/improving-customer-experience-with-aiops/" class="card">
+        <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="Leveraging AIOps to Elevate Customer Experience: A Strategic Approach" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">Leveraging AIOps to Elevate Customer Experience: A Strategic Approach</h3>
+          <p class="card-excerpt">Discover how AIOps transforms customer experience by proactively identifying issues, optimizing performance, and ensuring seamless digital interactions. Enhance satisfaction and loyalty.</p>
           <div class="card-footer">
             <span>2026-03-12</span>
             <span class="read-more">

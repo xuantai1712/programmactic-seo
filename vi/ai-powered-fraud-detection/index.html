@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -254,10 +292,11 @@
 <p>Các phương pháp phát hiện gian lận truyền thống, thường dựa trên các quy tắc cứng nhắc hoặc quy trình thủ công, gặp nhiều khó khăn trong việc theo kịp tốc độ và sự phức tạp của các mối đe dọa hiện đại. Chúng dễ bị bỏ qua các mẫu gian lận mới nổi, tạo ra nhiều cảnh báo sai (false positives) hoặc không đủ linh hoạt để thích nghi với sự thay đổi liên tục của hành vi lừa đảo. Hậu quả của gian lận không chỉ dừng lại ở thiệt hại tài chính trực tiếp mà còn kéo theo chi phí điều tra, pháp lý, mất uy tín thương hiệu và làm xói mòn lòng tin của khách hàng, gây ảnh hưởng tiêu cực đến sự phát triển bền vững của doanh nghiệp.</p>
 <h2>AI-Powered Fraud Detection: Giải Pháp Cách Mạng</h2>
 <p>Trước bối cảnh các mối đe dọa gian lận ngày càng gia tăng, trí tuệ nhân tạo (AI) nổi lên như một giải pháp đột phá, mang đến khả năng phát hiện gian lận vượt trội so với các phương pháp truyền thống. AI không chỉ có thể xử lý và phân tích lượng lớn dữ liệu một cách nhanh chóng mà còn có khả năng học hỏi, thích nghi và nhận diện các mẫu bất thường tinh vi mà con người hoặc các hệ thống dựa trên quy tắc khó có thể phát hiện.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h3>AI là gì và tại sao lại phù hợp với phát hiện gian lận?</h3>

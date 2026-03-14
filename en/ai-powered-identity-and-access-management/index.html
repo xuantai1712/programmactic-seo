@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>In today's interconnected digital landscape, organizations face an unprecedented array of security challenges. As the perimeter dissolves and workforces become increasingly distributed, managing who has access to what, when, and from where has become a monumental task. This is the domain of Identity and Access Management (IAM), a critical pillar of cybersecurity that establishes and manages user identities and their corresponding access privileges.</p>
 <p>Traditionally, IAM systems have relied on rule-based policies and manual oversight. While effective to a degree, these conventional approaches often struggle to keep pace with the dynamic nature of modern threats, the sheer volume of access requests, and the complexity of hybrid cloud environments. The limitations of static policies, the potential for human error, and the difficulty in detecting subtle anomalies have paved the way for a transformative evolution: AI-powered Identity and Access Management.</p>
 <p>This guide delves into how artificial intelligence (AI) and machine learning (ML) are redefining IAM, offering a more intelligent, adaptive, and resilient approach to securing digital assets. By moving beyond reactive measures, AI-powered IAM aims to predict, prevent, and respond to threats with unparalleled efficiency, fundamentally reshaping the future of digital security.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>What is AI-Powered Identity and Access Management?</h2>

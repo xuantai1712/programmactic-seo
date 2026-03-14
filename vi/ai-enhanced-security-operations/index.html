@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh kỹ thuật số ngày càng phức tạp, các tổ chức trên toàn cầu đang phải đối mặt với một làn sóng tấn công mạng không ngừng gia tăng cả về số lượng lẫn độ tinh vi. Từ các chiến dịch lừa đảo tinh vi đến mã độc tống tiền quy mô lớn và các cuộc tấn công dai dẳng có chủ đích (APT), thách thức trong việc bảo vệ tài sản số chưa bao giờ lớn đến thế. Các phương pháp phòng thủ truyền thống, dựa trên quy tắc và chữ ký, đang dần bộc lộ những hạn chế khi phải đối đầu với những mối đe dọa mới nổi và chưa từng được biết đến. Trong bức tranh đó, Trí tuệ Nhân tạo (AI) đã nổi lên như một công cụ mạnh mẽ, mang lại khả năng biến đổi cách thức các hoạt động an ninh được thực hiện, giúp các tổ chức không chỉ phản ứng mà còn chủ động phòng ngừa và giảm thiểu rủi ro.</p>
 <p>Bài viết này sẽ đi sâu vào cách AI đang cách mạng hóa hoạt động an ninh, từ việc tăng cường khả năng phát hiện mối đe dọa đến tự động hóa phản ứng và tối ưu hóa vận hành tổng thể. Chúng ta sẽ khám phá những lợi ích then chốt, các ứng dụng cụ thể, cũng như những thách thức cần vượt qua để khai thác tối đa tiềm năng của AI trong lĩnh vực an ninh mạng.</p>
 <h2>Bối Cảnh Thách Thức Của An Ninh Mạng Hiện Đại</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Trước khi đi sâu vào vai trò của AI, điều quan trọng là phải hiểu rõ những áp lực mà các nhóm an ninh đang phải đối mặt hàng ngày. Môi trường đe dọa ngày nay được đặc trưng bởi nhiều yếu tố phức tạp:</p>

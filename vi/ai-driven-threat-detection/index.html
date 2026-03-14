@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh kỹ thuật số ngày càng mở rộng và phức tạp, các mối đe dọa an ninh mạng đang phát triển với tốc độ chưa từng có. Từ các cuộc tấn công lừa đảo tinh vi đến phần mềm độc hại đa hình và các chiến dịch xâm nhập dai dẳng, các tổ chức trên toàn cầu phải đối mặt với áp lực liên tục trong việc bảo vệ dữ liệu, hệ thống và danh tiếng của mình. Các phương pháp bảo mật truyền thống, vốn dựa nhiều vào chữ ký và quy tắc đã biết, thường gặp khó khăn trong việc theo kịp sự tinh vi và khối lượng của các mối đe dọa mới nổi. Đây chính là lúc trí tuệ nhân tạo (AI) bước vào, mang đến một phương pháp tiếp cận mang tính cách mạng để phát hiện và ứng phó với các nguy cơ an ninh mạng.</p>
 <h3>AI-driven Threat Detection là gì?</h3>
 <p>Phát hiện mối đe dọa dựa trên AI là việc ứng dụng các thuật toán và mô hình trí tuệ nhân tạo, đặc biệt là học máy (Machine Learning) và học sâu (Deep Learning), để tự động xác định, phân tích và ứng phó với các hoạt động độc hại hoặc bất thường trong môi trường kỹ thuật số. Thay vì chỉ dựa vào các mẫu tấn công đã biết, AI có khả năng học hỏi từ một lượng dữ liệu khổng lồ để nhận diện các hành vi bất thường, dự đoán các mối đe dọa tiềm ẩn và cung cấp thông tin chi tiết có giá trị mà con người khó có thể phát hiện.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Sự khác biệt cốt lõi giữa phương pháp này và các phương pháp truyền thống nằm ở khả năng thích ứng và học hỏi. Các hệ thống bảo mật cũ thường yêu cầu cập nhật thủ công các chữ ký mối đe dọa. Ngược lại, AI liên tục cải thiện khả năng phát hiện của mình thông qua việc xử lý dữ liệu mới, cho phép nó nhận diện cả những mối đe dọa chưa từng thấy trước đây (zero-day) hoặc những biến thể mới của phần mềm độc hại.</p>

@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <h1>Nâng Tầm Cộng Tác Nhóm Với AIOps: Chìa Khóa Cho Vận Hành IT Hiệu Quả</h1>
 <p>Trong bối cảnh công nghệ thông tin (IT) ngày càng phức tạp và đòi hỏi tốc độ cao, khả năng cộng tác hiệu quả giữa các nhóm là yếu tố then chốt quyết định sự thành công của mọi tổ chức. Từ việc phát triển ứng dụng mới đến duy trì hoạt động ổn định của hệ thống, mỗi nhiệm vụ đều yêu cầu sự phối hợp nhịp nhàng giữa các phòng ban khác nhau như phát triển (Dev), vận hành (Ops), kỹ sư độ tin cậy trang web (SRE) và bảo mật. Tuy nhiên, các phương pháp truyền thống thường gặp phải những thách thức đáng kể, từ các silo thông tin đến sự chậm trễ trong việc giải quyết sự cố, gây ảnh hưởng đến năng suất và sự hài lòng của khách hàng.</p>
 <p>Đây là lúc AIOps (Trí tuệ Nhân tạo cho Vận hành IT) bước vào cuộc. AIOps không chỉ là một công cụ kỹ thuật mà còn là một phương pháp tiếp cận chiến lược có khả năng cách mạng hóa cách các nhóm IT làm việc cùng nhau. Bằng cách tích hợp Trí tuệ Nhân tạo (AI) và Học máy (ML) vào các quy trình vận hành, AIOps cung cấp cái nhìn sâu sắc, tự động hóa và khả năng dự đoán, từ đó tạo ra một môi trường thuận lợi hơn cho sự cộng tác và giải quyết vấn đề.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>AIOps Là Gì và Tại Sao Nó Quan Trọng Với Cộng Tác Nhóm?</h2>

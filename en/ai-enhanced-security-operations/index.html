@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>In an era where digital threats are constantly evolving in sophistication and volume, organizations face unprecedented challenges in safeguarding their assets. Traditional security operations, heavily reliant on manual processes and human analysis, are often overwhelmed by the sheer scale and complexity of modern cyberattacks. This escalating threat landscape necessitates a paradigm shift in how security is managed and executed. Artificial Intelligence (AI) and its subsets are emerging as pivotal technologies, offering a transformative approach to bolster cybersecurity defenses. AI-enhanced security operations represent a strategic integration of advanced analytical capabilities and automation into the core functions of a security team, moving beyond reactive measures to establish more proactive, intelligent, and resilient security postures.</p>
 <p>AI-enhanced security operations leverage machine learning, deep learning, and natural language processing to automate mundane tasks, identify subtle anomalies, and accelerate incident response. This integration empowers security analysts to focus on high-value strategic tasks, turning the tide against adversaries who often utilize automated tools themselves. The goal is not to replace human expertise but to augment it, providing security teams with superior tools to navigate the complex digital battlefield effectively.</p>
 <h2>Understanding the Core Challenges in Traditional Security Operations</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Before delving into the transformative power of AI, it's crucial to recognize the inherent limitations and pressures faced by traditional security operations centers (SOCs):</p>

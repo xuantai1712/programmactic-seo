@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <h1>Phát Hiện Bất Thường Bằng Học Máy: Tăng Cường Bảo Mật Trong Thế Giới Số</h1>
 <p>Trong kỷ nguyên số hóa mạnh mẽ, dữ liệu được tạo ra và lưu chuyển với tốc độ chưa từng có. Mặc dù mang lại vô vàn cơ hội, sự bùng nổ dữ liệu này cũng tạo ra những thách thức đáng kể, đặc biệt trong lĩnh vực bảo mật. Việc nhận diện các hành vi, giao dịch hoặc sự kiện bất thường – những tín hiệu có thể báo hiệu mối đe dọa tiềm ẩn hoặc các vấn đề nghiêm trọng – trở nên cực kỳ quan trọng. Đây chính là lúc khái niệm phát hiện bất thường (anomaly detection) phát huy vai trò.</p>
 <p>Phát hiện bất thường là quá trình xác định các điểm dữ liệu, sự kiện hoặc quan sát khác biệt đáng kể so với phần lớn dữ liệu còn lại. Những điểm khác biệt này thường được gọi là ‘ngoại lai’ (outliers) hoặc ‘bất thường’ (anomalies). Trong bối cảnh bảo mật, chúng có thể là dấu hiệu của các cuộc tấn công mạng, hoạt động gian lận, lỗi hệ thống hoặc những hành vi độc hại khác. Phương pháp truyền thống thường dựa vào các quy tắc được định nghĩa trước, nhưng chúng có giới hạn về khả năng thích ứng và mở rộng. Đây là lý do tại sao học máy (Machine Learning – ML) đang nổi lên như một công cụ mạnh mẽ, mang tính cách mạng hóa cách chúng ta tiếp cận vấn đề phát hiện bất thường.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>Tại Sao Học Máy Lại Quan Trọng Trong Phát Hiện Bất Thường?</h2>

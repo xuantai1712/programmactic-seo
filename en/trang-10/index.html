@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -400,95 +438,10 @@
 <section>
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
     <h2 style="margin: 0;">Latest Articles</h2>
-    <span style="color: var(--text-muted); font-size: 0.875rem;">8 articles on this page</span>
+    <span style="color: var(--text-muted); font-size: 0.875rem;">4 articles on this page</span>
   </div>
 
   <div class="grid">
-    
-      <a href="/en/machine-learning-for-itops/" class="card">
-        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Elevating IT Operations: The Power of Machine Learning and AIOps" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Elevating IT Operations: The Power of Machine Learning and AIOps</h3>
-          <p class="card-excerpt">Discover how machine learning transforms IT operations, enhancing efficiency, proactive problem-solving, and system reliability. Explore the benefits of AIOps for modern enterprises.</p>
-          <div class="card-footer">
-            <span>2026-03-12</span>
-            <span class="read-more">
-              Read more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/en/aiops-vs-devops-differences/" class="card">
-        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="AIOps vs. DevOps: Understanding Their Distinct Roles in Modern IT" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">AIOps vs. DevOps: Understanding Their Distinct Roles in Modern IT</h3>
-          <p class="card-excerpt">Explore the fundamental differences between AIOps and DevOps. Learn how these distinct methodologies optimize IT operations and software delivery for enhanced efficiency and reliability.</p>
-          <div class="card-footer">
-            <span>2026-03-12</span>
-            <span class="read-more">
-              Read more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/en/predictive-maintenance-with-aiops/" class="card">
-        <img src="https://images.unsplash.com/photo-1510511459019-5da56fd73b8c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Unlocking Operational Efficiency: Predictive Maintenance with AIOps" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Unlocking Operational Efficiency: Predictive Maintenance with AIOps</h3>
-          <p class="card-excerpt">Explore how AIOps transforms predictive maintenance, enabling proactive asset management, reducing downtime, and optimizing operational efficiency. Discover the future of smart maintenance.</p><div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
-</div>
-
-          <div class="card-footer">
-            <span>2026-03-12</span>
-            <span class="read-more">
-              Read more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/en/automated-incident-response-tools/" class="card">
-        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="The Strategic Imperative: Elevating Incident Management with Automated Response Tools" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">The Strategic Imperative: Elevating Incident Management with Automated Response Tools</h3>
-          <p class="card-excerpt">Discover how automated incident response tools streamline operations, reduce impact, and enhance your organization&#39;s security posture. Improve efficiency and accelerate threat containment.</p>
-          <div class="card-footer">
-            <span>2026-03-12</span>
-            <span class="read-more">
-              Read more
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
     
       <a href="/en/keyword/" class="card">
         <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 

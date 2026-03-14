@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh công nghệ thông tin (CNTT) ngày càng phức tạp, với sự bùng nổ của dữ liệu, dịch vụ đám mây, kiến trúc microservices và DevOps, việc quản lý vận hành (IT Operations) trở nên thách thức hơn bao giờ hết. Các phương pháp truyền thống dựa trên con người và công cụ thủ công không còn đủ sức để đối phó với quy mô và tốc độ thay đổi. Đây chính là lúc AIOps (Artificial Intelligence for IT Operations) trở thành giải pháp then chốt, biến đổi cách thức các tổ chức giám sát, quản lý và tự động hóa hạ tầng CNTT của mình.</p>
 <p>AIOps sử dụng trí tuệ nhân tạo (AI) và máy học (ML) để phân tích lượng lớn dữ liệu vận hành từ nhiều nguồn khác nhau – bao gồm nhật ký (logs), số liệu (metrics), dấu vết (traces) và sự kiện (events) – nhằm phát hiện các mẫu, dự đoán vấn đề, và tự động hóa các phản ứng. Mục tiêu cuối cùng là nâng cao hiệu quả, giảm thời gian chết (downtime), và tối ưu hóa trải nghiệm người dùng.</p>
 <p>Năm 2024, thị trường AIOps tiếp tục chứng kiến sự phát triển mạnh mẽ với nhiều công cụ tiên tiến, cung cấp các khả năng ngày càng tinh vi. Bài viết này sẽ đi sâu vào việc khám phá những công cụ AIOps hàng đầu, giúp các doanh nghiệp đưa ra lựa chọn phù hợp nhất để nâng tầm năng lực vận hành CNTT của mình.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>AIOps là gì và tầm quan trọng của nó trong bối cảnh hiện đại?</h2>

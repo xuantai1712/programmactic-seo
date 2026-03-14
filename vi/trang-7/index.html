@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -405,91 +443,6 @@
 
   <div class="grid">
     
-      <a href="/vi/aiops-for-hospitality-industry/" class="card">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="AIOps trong Ngành Khách sạn: Nâng Tầm Trải Nghiệm và Hiệu Suất Vận Hành" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">AIOps trong Ngành Khách sạn: Nâng Tầm Trải Nghiệm và Hiệu Suất Vận Hành</h3>
-          <p class="card-excerpt">Khám phá cách AIOps tối ưu hóa vận hành, dự đoán sự cố và nâng cao trải nghiệm khách hàng trong ngành khách sạn. Tìm hiểu giải pháp công nghệ thông minh cho hiệu suất vượt trội.</p>
-          <div class="card-footer">
-            <span>2026-03-12</span>
-            <span class="read-more">
-              Xem thêm
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/vi/aiops-for-real-estate-management/" class="card">
-        <img src="https://images.unsplash.com/photo-1504384308090-c89eec2488e1?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="AIOps trong Quản lý Bất động sản: Chuyển đổi Vận hành và Tối ưu hóa Hiệu suất" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">AIOps trong Quản lý Bất động sản: Chuyển đổi Vận hành và Tối ưu hóa Hiệu suất</h3>
-          <p class="card-excerpt">Khám phá cách AIOps chuyển đổi quản lý bất động sản bằng cách tự động hóa, dự đoán sự cố và tối ưu hóa vận hành. Nâng cao hiệu quả và giảm chi phí.</p>
-          <div class="card-footer">
-            <span>2026-03-12</span>
-            <span class="read-more">
-              Xem thêm
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/vi/aiops-for-legal-services/" class="card">
-        <img src="https://images.unsplash.com/photo-1504384308090-c89eec2488e1?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="AIOps trong Dịch vụ Pháp lý: Tối Ưu Hóa Hiệu Suất và Quản Lý Rủi Ro Toàn Diện" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">AIOps trong Dịch vụ Pháp lý: Tối Ưu Hóa Hiệu Suất và Quản Lý Rủi Ro Toàn Diện</h3>
-          <p class="card-excerpt">Khám phá cách AIOps giúp các tổ chức pháp lý tăng cường hiệu quả vận hành, giảm thiểu rủi ro, nâng cao bảo mật và đưa ra quyết định sáng suốt hơn trong kỷ nguyên số.</p><div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
-</div>
-
-          <div class="card-footer">
-            <span>2026-03-12</span>
-            <span class="read-more">
-              Xem thêm
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/vi/aiops-for-non-profit-organizations/" class="card">
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="AIOps cho Tổ chức Phi lợi nhuận: Tối Ưu Hóa Vận Hành và Nâng Cao Tác Động Sứ Mệnh" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">AIOps cho Tổ chức Phi lợi nhuận: Tối Ưu Hóa Vận Hành và Nâng Cao Tác Động Sứ Mệnh</h3>
-          <p class="card-excerpt">Khám phá cách AIOps giúp các tổ chức phi lợi nhuận tối ưu hóa vận hành CNTT, tiết kiệm nguồn lực, nâng cao độ tin cậy và tập trung sâu hơn vào sứ mệnh cốt lõi của mình.</p>
-          <div class="card-footer">
-            <span>2026-03-12</span>
-            <span class="read-more">
-              Xem thêm
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
       <a href="/vi/aiops-for-media-and-entertainment/" class="card">
         <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
              alt="AIOps trong Ngành Truyền thông và Giải trí: Nâng Tầm Hiệu Quả Vận Hành và Trải Nghiệm Khán Giả" 
@@ -640,6 +593,86 @@
           <div class="card-tag">AiOps</div>
           <h3 class="card-title">AIOps trong Tự Động Hóa Sản Xuất: Tối Ưu Hóa Vận Hành và Nâng Cao Hiệu Suất</h3>
           <p class="card-excerpt">Khám phá cách AIOps biến đổi tự động hóa sản xuất, giúp doanh nghiệp tối ưu hóa hiệu suất, giảm thời gian ngừng hoạt động và cải thiện chất lượng sản phẩm thông qua phân tích dữ liệu thông minh.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Xem thêm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/vi/aiops-for-healthcare-data-management/" class="card">
+        <img src="https://images.unsplash.com/photo-1510511459019-5da56fd73b8c?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="AIOps trong Quản lý Dữ liệu Y tế: Nâng cao Hiệu quả và Độ chính xác" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">AIOps trong Quản lý Dữ liệu Y tế: Nâng cao Hiệu quả và Độ chính xác</h3>
+          <p class="card-excerpt">Khám phá cách AIOps giúp ngành y tế quản lý dữ liệu hiệu quả, cải thiện hoạt động, phát hiện vấn đề nhanh chóng và tăng cường chất lượng chăm sóc bệnh nhân.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Xem thêm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/vi/monitoring-microservices-with-aiops/" class="card">
+        <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="Nâng Tầm Giám Sát Microservices: Ứng Dụng AIOps Toàn Diện" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">Nâng Tầm Giám Sát Microservices: Ứng Dụng AIOps Toàn Diện</h3>
+          <p class="card-excerpt">Khám phá cách AIOps cách mạng hóa việc giám sát microservices, tự động hóa phát hiện sự cố, phân tích nguyên nhân gốc rễ và tối ưu hóa hiệu suất hệ thống phức tạp.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Xem thêm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/vi/aiops-for-financial-services/" class="card">
+        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="AIOps trong Dịch Vụ Tài Chính: Tối Ưu Hóa Vận Hành và Tăng Cường Bảo Mật" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">AIOps trong Dịch Vụ Tài Chính: Tối Ưu Hóa Vận Hành và Tăng Cường Bảo Mật</h3>
+          <p class="card-excerpt">Khám phá cách AIOps giúp các tổ chức tài chính nâng cao hiệu quả hoạt động, phát hiện sự cố nhanh chóng, và củng cố khả năng phục hồi hệ thống thông qua tự động hóa thông minh.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Xem thêm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/vi/open-source-aiops-tools/" class="card">
+        <img src="https://images.unsplash.com/photo-1551288049-bbbda595c7a8?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="Khám Phá Sức Mạnh của Công Cụ AIOps Mã Nguồn Mở: Tối Ưu Hóa Vận Hành CNTT Hiện Đại" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">Khám Phá Sức Mạnh của Công Cụ AIOps Mã Nguồn Mở: Tối Ưu Hóa Vận Hành CNTT Hiện Đại</h3>
+          <p class="card-excerpt">Tìm hiểu các công cụ AIOps mã nguồn mở giúp tự động hóa, phát hiện sự cố nhanh chóng, tối ưu hiệu suất và giảm chi phí vận hành CNTT hiệu quả cho mọi doanh nghiệp.</p>
           <div class="card-footer">
             <span>2026-03-12</span>
             <span class="read-more">

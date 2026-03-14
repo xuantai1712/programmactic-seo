@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh kinh doanh toàn cầu không ngừng biến động, chuyển đổi số đã trở thành một mệnh lệnh chiến lược đối với mọi tổ chức. Nó không chỉ là việc áp dụng công nghệ mới mà còn là sự tái định hình toàn diện các quy trình, văn hóa và mô hình kinh doanh để thích nghi và phát triển trong kỷ nguyên số. Tuy nhiên, hành trình chuyển đổi số thường đi kèm với những thách thức đáng kể, đặc biệt là trong việc quản lý sự phức tạp ngày càng tăng của hạ tầng công nghệ thông tin (IT).</p>
 <p>Các hệ thống IT hiện đại giờ đây bao gồm nhiều môi trường phức tạp như đám mây lai, đa đám mây, kiến trúc microservices và các ứng dụng phân tán. Điều này tạo ra một lượng dữ liệu khổng lồ và vô số điểm tiềm ẩn cho sự cố, khiến việc giám sát và quản lý trở nên khó khăn hơn bao giờ hết. Để giải quyết vấn đề này, các doanh nghiệp đang tìm kiếm những phương pháp tiếp cận tiên tiến, và AIOps (Trí tuệ Nhân tạo cho Vận hành IT) đã nổi lên như một giải pháp then chốt.</p>
 <p>AIOps không chỉ là một công cụ mà là một chiến lược toàn diện, kết hợp sức mạnh của trí tuệ nhân tạo và học máy để tự động hóa và tối ưu hóa các quy trình vận hành IT. Bằng cách tận dụng AIOps, các tổ chức có thể không chỉ đối phó với sự phức tạp mà còn biến nó thành lợi thế cạnh tranh, đẩy nhanh quá trình chuyển đổi số và đạt được những bước tiến đáng kể về hiệu quả, độ tin cậy và khả năng đổi mới.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>Chuyển Đổi Số và Những Thách Thức Hiện Đại</h2>

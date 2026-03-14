@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -250,10 +288,11 @@
 <p>In this intricate landscape, Artificial Intelligence for IT Operations (AIOps) emerges as a transformative solution. AIOps leverages artificial intelligence and machine learning to automate and enhance IT operations, moving beyond conventional monitoring tools to provide proactive insights, intelligent automation, and continuous optimization. For healthcare data management, AIOps offers a powerful paradigm shift, enabling organizations to navigate the complexities of their digital infrastructure with greater agility, security, and predictive capability. This guide explores the foundational principles of AIOps and its profound impact on revolutionizing healthcare data management, ensuring reliability, security, and efficiency in an increasingly data-driven world.</p>
 <h2>The Evolving Landscape of Healthcare Data Management</h2>
 Healthcare data management is a multifaceted challenge. Organizations must contend with an ever-growing array of data sources, each with unique formats, sensitivities, and compliance requirements. From patient demographics and clinical notes to diagnostic images and real-time vital signs, the sheer volume and velocity of information demand robust and intelligent systems. Moreover, the imperative for data interoperability across disparate systems, coupled with the critical need for data security and privacy, adds layers of complexity. Manual oversight of such an expansive and dynamic environment is becoming increasingly impractical and error-prone, highlighting the urgent need for advanced, automated solutions that can process, analyze, and act upon data at scale.
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>Introducing AIOps: Bridging the Gap</h2>

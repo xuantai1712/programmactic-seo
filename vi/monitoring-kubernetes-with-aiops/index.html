@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <h2>Giới Thiệu: Chuyển Đổi Giám Sát Kubernetes Với AIOps</h2>
 <p>Trong kỷ nguyên điện toán đám mây và kiến trúc microservices, Kubernetes đã trở thành nền tảng không thể thiếu để triển khai và quản lý các ứng dụng container hóa. Tuy nhiên, sự phức tạp vốn có của môi trường Kubernetes – với hàng trăm hoặc thậm chí hàng ngàn pod, services, và tài nguyên động – đặt ra thách thức đáng kể cho việc giám sát truyền thống. Để đảm bảo hiệu suất tối ưu, độ tin cậy cao và khả năng phục hồi nhanh chóng, các tổ chức cần một phương pháp tiếp cận tiên tiến hơn.</p>
 <p>AIOps, hay Trí tuệ Nhân tạo cho Vận hành IT, đang nổi lên như một giải pháp đột phá. Bằng cách kết hợp sức mạnh của dữ liệu lớn, máy học và tự động hóa, AIOps mang lại khả năng giám sát Kubernetes thông minh, dự đoán và chủ động. Nó không chỉ giúp các đội ngũ vận hành đối phó với lượng dữ liệu khổng lồ mà còn biến dữ liệu đó thành những thông tin chi tiết có giá trị, cho phép họ phát hiện vấn đề sớm hơn, phân tích nguyên nhân gốc nhanh hơn và tự động hóa các phản ứng cần thiết. Bài viết này sẽ đi sâu vào cách AIOps định hình lại việc giám sát Kubernetes, mang lại hiệu quả vận hành và độ ổn định hệ thống vượt trội.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>Tại Sao Giám Sát Kubernetes Lại Quan Trọng?</h2>

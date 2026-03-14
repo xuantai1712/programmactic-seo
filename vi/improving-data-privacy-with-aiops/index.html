@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh kỷ nguyên số bùng nổ, dữ liệu đã trở thành tài sản quý giá nhất của mọi tổ chức, từ doanh nghiệp đến các cơ quan chính phủ. Tuy nhiên, cùng với giá trị to lớn đó là những thách thức không ngừng về bảo mật và quyền riêng tư. Các vụ rò rỉ dữ liệu, tấn công mạng ngày càng tinh vi đã đặt ra yêu cầu cấp thiết về việc áp dụng các giải pháp bảo vệ dữ liệu mạnh mẽ và chủ động hơn. Đây chính là lúc AIOPs (Artificial Intelligence for IT Operations) nổi lên như một công cụ tiềm năng, mang lại khả năng cách mạng hóa cách chúng ta tiếp cận và quản lý quyền riêng tư dữ liệu.</p>
 <p>Bài viết này sẽ đi sâu khám phá vai trò của AIOPs trong việc củng cố quyền riêng tư dữ liệu, từ cơ chế hoạt động đến những lợi ích mà nó mang lại. Chúng ta cũng sẽ tìm hiểu về các thách thức tiềm ẩn và những lời khuyên thiết thực để triển khai AIOPs một cách hiệu quả, hướng tới một tương lai nơi dữ liệu được bảo vệ an toàn và quyền riêng tư của cá nhân được tôn trọng tối đa.</p>
 <h2>Quyền Riêng Tư Dữ Liệu Trong Bối Cảnh Hiện Đại</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Sự phát triển vượt bậc của công nghệ đã dẫn đến một lượng dữ liệu khổng lồ được tạo ra, thu thập và xử lý mỗi ngày. Từ thông tin cá nhân của người dùng, dữ liệu giao dịch tài chính, đến hồ sơ y tế, mọi thứ đều được số hóa và lưu trữ. Mặc dù điều này mang lại nhiều tiện ích và cơ hội phát triển, nó cũng tạo ra một &quot;bề mặt tấn công&quot; rộng lớn hơn cho các mối đe dọa an ninh mạng.</p>

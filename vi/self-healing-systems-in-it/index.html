@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh công nghệ thông tin (CNTT) ngày càng phức tạp và mở rộng, các tổ chức đang phải đối mặt với áp lực lớn trong việc duy trì hoạt động liên tục và ổn định của hạ tầng kỹ thuật số. Từ các ứng dụng kinh doanh cốt lõi đến dịch vụ khách hàng, mọi gián đoạn, dù nhỏ nhất, đều có thể gây ra những hậu quả đáng kể. Sự cố hệ thống không chỉ làm giảm năng suất mà còn ảnh hưởng đến trải nghiệm người dùng, uy tín thương hiệu và thậm chí là doanh thu. Để đối phó với thách thức này, khái niệm &quot;hệ thống tự phục hồi&quot; (self-healing systems) đã nổi lên như một giải pháp mang tính cách mạng, hứa hẹn một tương lai nơi các hệ thống CNTT có thể tự động phát hiện, chẩn đoán và khắc phục vấn đề mà không cần sự can thiệp của con người.</p>
 <p>Hệ thống tự phục hồi là một tập hợp các công nghệ và quy trình được thiết kế để giám sát liên tục trạng thái của hạ tầng CNTT, xác định các bất thường hoặc lỗi, và chủ động thực hiện các hành động khắc phục để khôi phục hoặc duy trì trạng thái hoạt động tối ưu. Mục tiêu chính là giảm thiểu thời gian ngừng hoạt động, cải thiện hiệu quả vận hành và nâng cao khả năng phục hồi tổng thể của các hệ thống kỹ thuật số. Thay vì chờ đợi sự cố xảy ra và đội ngũ IT phải phản ứng thủ công, hệ thống tự phục hồi chủ động can thiệp, biến các thách thức thành cơ hội để học hỏi và tự tối ưu hóa.</p>
 <h2>Các Khía Cạnh Chính của Hệ thống Tự phục hồi</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Để hiểu rõ cách thức hoạt động của một hệ thống tự phục hồi, chúng ta cần xem xét các khía cạnh cốt lõi tạo nên khả năng đặc biệt này:</p>

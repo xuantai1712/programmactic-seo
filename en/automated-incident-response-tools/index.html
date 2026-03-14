@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -251,10 +289,11 @@
 The sheer volume and complexity of security incidents have grown exponentially. Traditional, manual incident response processes, while foundational, often struggle to keep pace. Security teams are frequently overwhelmed by alert fatigue, disparate data sources, and the necessity to perform repetitive, time-consuming tasks. This can lead to critical delays in identifying and mitigating threats, expanding the window of opportunity for attackers, and increasing the potential for damage. Furthermore, the global shortage of skilled cybersecurity professionals exacerbates these challenges, placing immense pressure on existing teams. In this environment, the ability to respond rapidly and effectively is not just an operational advantage; it is a critical business differentiator and a fundamental aspect of maintaining trust and continuity.
 <h2>What Are Automated Incident Response Tools?</h2>
 Automated Incident Response tools are advanced software platforms designed to orchestrate and execute predefined actions in response to detected security and operational incidents. At their core, these tools leverage automation to eliminate manual steps, integrate disparate systems, and accelerate the entire incident lifecycle. They function by taking inputs from various security and IT systems – such as Security Information and Event Management (SIEM) systems, Endpoint Detection and Response (EDR) solutions, intrusion detection systems, and ticketing platforms – to trigger automated workflows. These workflows, often referred to as "playbooks," are pre-configured sequences of actions tailored to specific incident types. By automating the routine, repetitive, and time-sensitive aspects of incident response, these tools free up human analysts to focus on more complex analysis, strategic decision-making, and threat hunting.
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>Key Capabilities and Features of Automated Incident Response Platforms</h2>

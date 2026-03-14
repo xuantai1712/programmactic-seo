@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh công nghiệp hiện đại, việc duy trì hoạt động liên tục và hiệu quả của các thiết bị, máy móc là yếu tố then chốt quyết định năng lực cạnh tranh của doanh nghiệp. Các phương pháp bảo trì truyền thống thường gặp phải những hạn chế nhất định, từ việc sửa chữa khi sự cố đã xảy ra (bảo trì phản ứng) cho đến việc thay thế định kỳ không cần thiết (bảo trì phòng ngừa). Điều này dẫn đến chi phí vận hành cao, thời gian ngừng hoạt động ngoài ý muốn và lãng phí nguồn lực.</p>
 <p>Để giải quyết những thách thức này, khái niệm Bảo Trì Dự Đoán (Predictive Maintenance – PM) đã ra đời, mang đến một cách tiếp cận chủ động hơn. Tuy nhiên, với sự gia tăng về khối lượng và độ phức tạp của dữ liệu từ các hệ thống vận hành, việc phân tích và đưa ra dự đoán chính xác đòi hỏi một năng lực vượt trội. Đây chính là lúc AIOps (Artificial Intelligence for IT Operations) phát huy vai trò của mình, nâng tầm Bảo Trì Dự Đoán lên một cấp độ mới, giúp doanh nghiệp không chỉ dự đoán mà còn tối ưu hóa toàn bộ quy trình bảo trì.</p>
 <h2>Bảo Trì Dự Đoán Là Gì?</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Bảo Trì Dự Đoán là một chiến lược bảo trì dựa trên việc giám sát tình trạng của thiết bị để dự đoán khi nào sự cố có khả năng xảy ra. Mục tiêu chính là thực hiện công việc bảo trì chính xác vào thời điểm cần thiết, ngay trước khi thiết bị gặp trục trặc, thay vì sửa chữa sau khi hỏng hóc hoặc theo một lịch trình cố định.</p>

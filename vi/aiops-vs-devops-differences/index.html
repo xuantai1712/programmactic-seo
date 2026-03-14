@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -251,10 +289,11 @@
 DevOps không chỉ là một công nghệ hay một bộ công cụ, mà là một triết lý văn hóa, một tập hợp các thực tiễn và phương pháp tiếp cận nhằm hợp nhất phát triển phần mềm (Development – Dev) và vận hành IT (Operations – Ops). Mục tiêu cốt lõi của DevOps là rút ngắn vòng đời phát triển hệ thống, liên tục cung cấp các tính năng mới, bản vá lỗi và cập nhật một cách nhanh chóng, đáng tin cậy và hiệu quả, đồng thời duy trì sự ổn định của môi trường sản xuất.
 <h3>DevOps là gì?</h3>
 DevOps thúc đẩy sự hợp tác, giao tiếp và tích hợp chặt chẽ giữa các nhóm phát triển và vận hành, những nhóm mà theo truyền thống thường làm việc trong các silo riêng biệt với mục tiêu và ưu tiên khác nhau. Bằng cách phá vỡ những rào cản này, DevOps khuyến khích sự chia sẻ trách nhiệm và mục tiêu chung, từ đó nâng cao hiệu quả tổng thể của quá trình cung cấp phần mềm. Các nhóm Dev và Ops cùng nhau chịu trách nhiệm cho toàn bộ vòng đời của ứng dụng, từ giai đoạn lập kế hoạch, thiết kế, phát triển, kiểm thử, triển khai cho đến vận hành, giám sát và thu thập phản hồi.
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h3>Các Nguyên Tắc Chính của DevOps</h3>

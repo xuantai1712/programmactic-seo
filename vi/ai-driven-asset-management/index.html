@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -254,10 +292,11 @@
 <h3>Phân Tích Dữ Liệu Chuyên Sâu</h3>
 <p>Một trong những ứng dụng cốt lõi của AI trong quản lý tài sản là khả năng xử lý và phân tích dữ liệu ở quy mô và tốc độ vượt trội. AI có thể hấp thụ và diễn giải cả dữ liệu có cấu trúc như giá cổ phiếu, lãi suất, báo cáo tài chính, và dữ liệu phi cấu trúc như tin tức, báo cáo nghiên cứu, bài đăng trên mạng xã hội, thậm chí là các cuộc gọi hội nghị và podcast.</p>
 <p>Thông qua các thuật toán học máy (Machine Learning) và xử lý ngôn ngữ tự nhiên (Natural Language Processing - NLP), AI có thể nhận diện các mẫu hình phức tạp, phát hiện mối tương quan ẩn giấu và đánh giá cảm xúc thị trường từ các nguồn văn bản. Khả năng này giúp các nhà quản lý tài sản có được cái nhìn toàn diện hơn, không chỉ dựa trên các chỉ số định lượng mà còn cả các yếu tố định tính thường bị bỏ qua.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h3>Tối Ưu Hóa Danh Mục Đầu Tư Động</h3>

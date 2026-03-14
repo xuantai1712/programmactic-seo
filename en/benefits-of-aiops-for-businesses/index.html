@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -250,10 +288,11 @@
 <p>Enter AIOps – Artificial Intelligence for IT Operations. AIOps represents a paradigm shift, integrating big data, machine learning, and automation to enhance and streamline IT operations management. By applying advanced analytical capabilities to the vast streams of operational data, AIOps platforms move beyond simple monitoring to provide predictive insights, automate incident resolution, and ultimately, transform the way businesses manage their technology stack. This approach empowers organizations to achieve a new level of operational excellence, driving efficiency, resilience, and strategic advantage.</p>
 <h2>Enhanced Operational Efficiency</h2>
 One of the primary advantages of implementing AIOps is the substantial improvement in operational efficiency. Traditional IT operations often involve manual data correlation, repetitive tasks, and time-consuming investigations. AIOps automates many of these processes, from data ingestion and analysis to alert management and incident response. By leveraging machine learning algorithms, AIOps platforms can automatically identify patterns, anomalies, and potential issues, reducing the need for human intervention in routine monitoring and triage activities. This automation frees up valuable IT staff from mundane tasks, allowing them to focus on more strategic initiatives, innovation, and complex problem-solving that require human expertise.
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Furthermore, AIOps streamlines workflows by providing a centralized view of IT health and performance. This holistic perspective eliminates the need to switch between numerous disparate tools, accelerating problem identification and resolution. The result is a more agile and responsive IT department capable of handling greater complexity with existing resources, leading to a more productive operational environment.</p>

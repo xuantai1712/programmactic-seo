@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -250,10 +288,11 @@
 <p>Ngành viễn thông đang trải qua một cuộc cách mạng sâu rộng, được thúc đẩy bởi sự ra đời của các công nghệ tiên tiến như 5G, Internet Vạn Vật (IoT), điện toán biên (edge computing) và ảo hóa mạng. Những đổi mới này mang lại cơ hội phát triển vượt bậc nhưng đồng thời cũng tạo ra những thách thức chưa từng có cho các nhà mạng. Mạng lưới trở nên phức tạp hơn bao giờ hết, với lượng dữ liệu khổng lồ được tạo ra mỗi giây, đòi hỏi khả năng quản lý và vận hành tinh vi hơn.</p>
 <p>Trong bối cảnh đó, các phương pháp vận hành truyền thống dựa vào sức người hoặc các công cụ giám sát đơn lẻ đã không còn đủ sức để đối phó. Việc phát hiện, chẩn đoán và khắc phục sự cố trở nên chậm chạp, tốn kém và thường mang tính phản ứng. Điều này không chỉ ảnh hưởng đến hiệu quả hoạt động mà còn tác động trực tiếp đến chất lượng dịch vụ và trải nghiệm của khách hàng, những người ngày càng kỳ vọng vào sự liền mạch và ổn định.</p>
 <p>Đây chính là lúc AIOps (Artificial Intelligence for IT Operations) bước vào sân khấu. AIOps không chỉ là một công cụ mà là một phương pháp tiếp cận toàn diện, kết hợp Trí tuệ Nhân tạo (AI) và Học máy (Machine Learning – ML) với khả năng phân tích dữ liệu lớn để tự động hóa và tối ưu hóa các quy trình vận hành công nghệ thông tin. Đối với ngành viễn thông, AIOps hứa hẹn một sự chuyển đổi mạnh mẽ, từ mô hình vận hành phản ứng sang chủ động, thông minh và có khả năng tự phục hồi.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>AIOps Là Gì?</h2>

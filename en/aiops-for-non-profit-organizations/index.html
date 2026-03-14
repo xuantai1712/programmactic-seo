@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Non-profit organizations operate in a unique landscape, driven by a profound mission to create positive change. While their core focus remains on community, advocacy, and service, the operational backbone supporting these efforts has become increasingly reliant on technology. From managing donor databases and volunteer networks to facilitating online fundraising and delivering critical programs, robust and reliable IT infrastructure is paramount. However, non-profits often face significant challenges, including resource constraints, limited IT staff, and the constant pressure to maximize every contribution.</p>
 <p>In this environment, the concept of AIOps—Artificial Intelligence for IT Operations—emerges as a transformative approach. AIOps leverages advanced analytics, machine learning, and automation to enhance the efficiency, reliability, and security of IT systems. For non-profits, this isn't just about technological advancement; it's about empowering their mission, ensuring every digital interaction runs smoothly, and ultimately, amplifying their impact in the world.</p>
 <h2>What is AIOps and Why is it Relevant for Non-profits?</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>AIOps represents a paradigm shift in how IT operations are managed. Traditionally, IT teams relied on manual monitoring, alert fatigue, and reactive problem-solving. AIOps, by contrast, brings together big data, machine learning, and artificial intelligence to automate and streamline these processes. It involves collecting vast amounts of operational data from various sources—such as networks, servers, applications, and logs—and then using AI algorithms to analyze this data in real-time. The goal is to identify patterns, detect anomalies, predict potential issues before they cause disruptions, and even automate remedial actions.</p>

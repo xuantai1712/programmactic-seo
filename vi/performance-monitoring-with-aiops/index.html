@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <h1>Giám Sát Hiệu Suất Với AIOps: Nâng Tầm Vận Hành Hệ Thống Hiện Đại</h1>
 <p>Trong bối cảnh công nghệ thông tin (IT) ngày càng phức tạp và phát triển nhanh chóng, việc đảm bảo hiệu suất ổn định cho các hệ thống và ứng dụng là một thách thức lớn đối với mọi tổ chức. Từ các kiến trúc vi dịch vụ (microservices) đến môi trường đa đám mây (multi-cloud) và lai (hybrid), khối lượng dữ liệu vận hành (logs, metrics, traces) đã tăng lên một cách chóng mặt. Giám sát hiệu suất truyền thống, dựa trên các ngưỡng tĩnh và phân tích thủ công, đang dần trở nên kém hiệu quả, dẫn đến tình trạng cảnh báo quá tải, chậm trễ trong việc phát hiện và giải quyết sự cố.</p>
 <p>Đây chính là lúc Trí tuệ Nhân tạo cho Vận hành IT (AIOps) xuất hiện như một giải pháp mang tính cách mạng. AIOps không chỉ là một công cụ mà là một phương pháp tiếp cận toàn diện, sử dụng sức mạnh của trí tuệ nhân tạo (AI) và học máy (ML) để tự động hóa và thông minh hóa các quy trình vận hành IT, đặc biệt là trong lĩnh vực giám sát hiệu suất. Bằng cách phân tích một lượng lớn dữ liệu từ nhiều nguồn khác nhau, AIOps mang lại khả năng hiển thị sâu sắc, phát hiện bất thường nhanh chóng và dự đoán vấn đề trước khi chúng ảnh hưởng đến người dùng hoặc hoạt động kinh doanh. Bài viết này sẽ đi sâu vào cách AIOps định hình lại việc giám sát hiệu suất, mang lại những lợi ích vượt trội và cách các tổ chức có thể triển khai công nghệ này một cách hiệu quả.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>Tại Sao Giám Sát Hiệu Suất Truyền Thống Không Còn Đủ?</h2>

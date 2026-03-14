@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -251,10 +289,11 @@
 <h2>Giới Thiệu: Kỷ Nguyên Container và Thách Thức Giám Sát</h2>
 <p>Sự bùng nổ của container đã thay đổi hoàn toàn cách các nhà phát triển và đội ngũ vận hành xây dựng, triển khai và quản lý ứng dụng. Thay vì các máy ảo cồng kềnh, container cung cấp một môi trường nhẹ, độc lập và di động cho phép ứng dụng chạy nhất quán trên mọi môi trường. Điều này đã thúc đẩy sự ra đời của kiến trúc microservices, nơi các ứng dụng lớn được chia thành các dịch vụ nhỏ hơn, độc lập, giao tiếp với nhau.</p>
 <p>Mặc dù mang lại nhiều ưu điểm, môi trường container cũng đặt ra những thách thức đáng kể cho việc giám sát truyền thống. Với hàng trăm, thậm chí hàng ngàn container chạy song song, liên tục được tạo mới, ngừng hoạt động hoặc thay đổi trạng thái, việc thu thập, phân tích và diễn giải dữ liệu giám sát trở nên vô cùng phức tạp. Các công cụ giám sát truyền thống thường không đủ khả năng để xử lý khối lượng dữ liệu khổng lồ này một cách hiệu quả, dẫn đến tình trạng cảnh báo quá tải, khó khăn trong việc xác định nguyên nhân gốc rễ và thời gian xử lý sự cố kéo dài.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>AIOps Là Gì và Tại Sao Lại Quan Trọng Cho Giám Sát Container?</h2>

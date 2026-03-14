@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Đám mây riêng (Private Cloud) đã trở thành một nền tảng cơ sở hạ tầng thiết yếu cho nhiều tổ chức, đặc biệt là những doanh nghiệp yêu cầu mức độ kiểm soát cao, bảo mật nghiêm ngặt và khả năng tùy chỉnh chuyên sâu. Với việc triển khai các ứng dụng quan trọng và dữ liệu nhạy cảm, việc duy trì hiệu suất, tính khả dụng và ổn định của môi trường đám mây riêng là ưu tiên hàng đầu. Tuy nhiên, khi hệ thống ngày càng trở nên phức tạp và mở rộng, phương pháp giám sát truyền thống đang đối mặt với những thách thức đáng kể. Đây là lúc Trí tuệ Nhân tạo cho Vận hành CNTT (AIOps) nổi lên như một giải pháp đột phá, mang lại khả năng giám sát thông minh và tự động hóa cho đám mây riêng.</p>
 <h2>Đám Mây Riêng và Những Thách Thức Giám Sát Hiện Đại</h2>
 <p>Đám mây riêng mang lại nhiều lợi ích chiến lược, nhưng cũng đi kèm với các yêu cầu vận hành phức tạp hơn so với việc sử dụng dịch vụ đám mây công cộng. Việc giám sát hiệu quả trong môi trường này đòi hỏi một cách tiếp cận toàn diện và tiên tiến.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h3>Bản Chất của Đám Mây Riêng</h3>

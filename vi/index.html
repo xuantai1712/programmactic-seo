@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -410,91 +448,6 @@
 
   <div class="grid">
     
-      <a href="/vi/affiliate-disclosure/" class="card">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Tuyên bố tiếp thị liên kết" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Tuyên bố tiếp thị liên kết</h3>
-          <p class="card-excerpt">Thông tin minh bạch về liên kết tiếp thị liên kết trên website.</p>
-          <div class="card-footer">
-            <span>2026-03-14</span>
-            <span class="read-more">
-              Xem thêm
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/vi/privacy-policy/" class="card">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Chính sách quyền riêng tư" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Chính sách quyền riêng tư</h3>
-          <p class="card-excerpt">Cách chúng tôi thu thập, sử dụng và bảo vệ dữ liệu.</p><div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
-</div>
-
-          <div class="card-footer">
-            <span>2026-03-14</span>
-            <span class="read-more">
-              Xem thêm
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/vi/contact/" class="card">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Liên hệ" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Liên hệ</h3>
-          <p class="card-excerpt">Kênh liên hệ và hợp tác nội dung.</p>
-          <div class="card-footer">
-            <span>2026-03-14</span>
-            <span class="read-more">
-              Xem thêm
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
-      <a href="/vi/about/" class="card">
-        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
-             alt="Giới thiệu" 
-             class="card-image" 
-             loading="lazy"
-             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
-        <div class="card-content">
-          <div class="card-tag">AiOps</div>
-          <h3 class="card-title">Giới thiệu</h3>
-          <p class="card-excerpt">Thông tin về AiOps Bridge, mục tiêu nội dung và phạm vi chia sẻ.</p>
-          <div class="card-footer">
-            <span>2026-03-14</span>
-            <span class="read-more">
-              Xem thêm
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </span>
-          </div>
-        </div>
-      </a>
-    
       <a href="/vi/automated-compliance-checking-with-ai/" class="card">
         <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
              alt="Kiểm Tra Tuân Thủ Tự Động Với AI: Tối Ưu Hiệu Quả và Giảm Thiểu Rủi Ro" 
@@ -645,6 +598,86 @@
           <div class="card-tag">AiOps</div>
           <h3 class="card-title">Nâng Cao Chất Lượng Dữ Liệu Với AIOps: Hướng Đi Mới Cho Doanh Nghiệp</h3>
           <p class="card-excerpt">Khám phá cách AIOps chuyển đổi việc quản lý và nâng cao chất lượng dữ liệu, giúp doanh nghiệp đưa ra quyết định tốt hơn và tối ưu hóa hoạt động.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Xem thêm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/vi/improving-data-privacy-with-aiops/" class="card">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="AIOPs và Quyền Riêng Tư Dữ Liệu: Tối Ưu Bảo Vệ Trong Kỷ Nguyên Số" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">AIOPs và Quyền Riêng Tư Dữ Liệu: Tối Ưu Bảo Vệ Trong Kỷ Nguyên Số</h3>
+          <p class="card-excerpt">Nâng cao quyền riêng tư dữ liệu với AIOPs. Khám phá cách công nghệ này giúp phát hiện mối đe dọa, tự động hóa phản ứng và đảm bảo tuân thủ quy định một cách chủ động và hiệu quả.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Xem thêm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/vi/improving-customer-experience-with-aiops/" class="card">
+        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="AIOps: Chìa Khóa Nâng Tầm Trải Nghiệm Khách Hàng Trong Kỷ Nguyên Số" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">AIOps: Chìa Khóa Nâng Tầm Trải Nghiệm Khách Hàng Trong Kỷ Nguyên Số</h3>
+          <p class="card-excerpt">Khám phá cách AIOps biến đổi trải nghiệm khách hàng bằng cách tối ưu hóa hiệu suất hệ thống, phát hiện sự cố chủ động và đảm bảo dịch vụ liền mạch. Nâng tầm CX với công nghệ thông minh.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Xem thêm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/vi/improving-business-agility-with-aiops/" class="card">
+        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="Nâng Cao Linh Hoạt Kinh Doanh: Vai Trò Đột Phá của AIOPs trong Vận Hành IT" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">Nâng Cao Linh Hoạt Kinh Doanh: Vai Trò Đột Phá của AIOPs trong Vận Hành IT</h3>
+          <p class="card-excerpt">Khám phá cách AIOPs giúp doanh nghiệp tăng cường khả năng phản ứng, tối ưu hóa vận hành IT và thúc đẩy đổi mới, nâng cao linh hoạt cạnh tranh trong kỷ nguyên số.</p>
+          <div class="card-footer">
+            <span>2026-03-12</span>
+            <span class="read-more">
+              Xem thêm
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </a>
+    
+      <a href="/vi/improving-team-productivity-with-aiops/" class="card">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010c7191ae?auto=format&amp;fit=crop&amp;w=800&amp;q=80" 
+             alt="Nâng Cao Năng Suất Đội Ngũ IT Với AIOps: Hướng Dẫn Toàn Diện" 
+             class="card-image" 
+             loading="lazy"
+             onerror="this.src='https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80';">
+        <div class="card-content">
+          <div class="card-tag">AiOps</div>
+          <h3 class="card-title">Nâng Cao Năng Suất Đội Ngũ IT Với AIOps: Hướng Dẫn Toàn Diện</h3>
+          <p class="card-excerpt">Khám phá cách AIOps biến đổi hoạt động IT, giúp đội ngũ giảm gánh nặng thủ công, phát hiện sự cố nhanh hơn và tập trung vào đổi mới chiến lược.</p>
           <div class="card-footer">
             <span>2026-03-12</span>
             <span class="read-more">

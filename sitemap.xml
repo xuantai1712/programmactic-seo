@@ -2,22 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://aiopsbridge.com/vi/</loc>
-    <lastmod>2026-03-11</lastmod>
-    
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/" />
-    
-  </url>
-  
-  <url>
-    <loc>https://aiopsbridge.com/</loc>
-    <lastmod>2026-03-12</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://aiopsbridge.com/vi/aiops-bridge-for-enterprise/</loc>
     <lastmod>2026-03-12</lastmod>
     
@@ -2248,42 +2232,12 @@
   </url>
   
   <url>
-    <loc>https://aiopsbridge.com/vi/about/</loc>
+    <loc>https://aiopsbridge.com/vi/</loc>
     <lastmod>2026-03-14</lastmod>
     
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/about/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/about/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/about/" />
-    
-  </url>
-  
-  <url>
-    <loc>https://aiopsbridge.com/vi/contact/</loc>
-    <lastmod>2026-03-14</lastmod>
-    
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/contact/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/contact/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/contact/" />
-    
-  </url>
-  
-  <url>
-    <loc>https://aiopsbridge.com/vi/privacy-policy/</loc>
-    <lastmod>2026-03-14</lastmod>
-    
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/privacy-policy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/privacy-policy/" />
-    
-  </url>
-  
-  <url>
-    <loc>https://aiopsbridge.com/vi/affiliate-disclosure/</loc>
-    <lastmod>2026-03-14</lastmod>
-    
-    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/affiliate-disclosure/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/affiliate-disclosure/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/affiliate-disclosure/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/" />
     
   </url>
   
@@ -2294,6 +2248,16 @@
     <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/about/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/about/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/about/" />
+    
+  </url>
+  
+  <url>
+    <loc>https://aiopsbridge.com/en/affiliate-disclosure/</loc>
+    <lastmod>2026-03-14</lastmod>
+    
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/affiliate-disclosure/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/affiliate-disclosure/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/affiliate-disclosure/" />
     
   </url>
   
@@ -2318,12 +2282,48 @@
   </url>
   
   <url>
-    <loc>https://aiopsbridge.com/en/affiliate-disclosure/</loc>
+    <loc>https://aiopsbridge.com/vi/about/</loc>
+    <lastmod>2026-03-14</lastmod>
+    
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/about/" />
+    
+  </url>
+  
+  <url>
+    <loc>https://aiopsbridge.com/vi/affiliate-disclosure/</loc>
     <lastmod>2026-03-14</lastmod>
     
     <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/affiliate-disclosure/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/affiliate-disclosure/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/affiliate-disclosure/" />
+    
+  </url>
+  
+  <url>
+    <loc>https://aiopsbridge.com/vi/contact/</loc>
+    <lastmod>2026-03-14</lastmod>
+    
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/contact/" />
+    
+  </url>
+  
+  <url>
+    <loc>https://aiopsbridge.com/vi/privacy-policy/</loc>
+    <lastmod>2026-03-14</lastmod>
+    
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiopsbridge.com/vi/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiopsbridge.com/en/privacy-policy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiopsbridge.com/vi/privacy-policy/" />
+    
+  </url>
+  
+  <url>
+    <loc>https://aiopsbridge.com/</loc>
+    <lastmod>2026-03-14</lastmod>
     
   </url>
 </urlset>

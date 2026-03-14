@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <h2>The Imperative of Advanced Threat Detection in the Digital Age</h2>
 <p>In an increasingly interconnected world, digital landscapes are constantly under siege from a diverse and sophisticated array of cyber threats. Traditional security measures, while foundational, often struggle to keep pace with the sheer volume, velocity, and complexity of modern attacks. From intricate phishing campaigns and advanced persistent threats (APTs) to zero-day exploits and ransomware variants, the adversaries are innovative, persistent, and often leverage automation themselves. This dynamic environment necessitates a paradigm shift in how organizations approach cybersecurity, moving beyond reactive responses to proactive, intelligent defense mechanisms.</p>
 <p>Artificial Intelligence (AI) has emerged as a transformative force in this arena, offering capabilities that significantly enhance an organization's ability to detect, analyze, and respond to threats. AI-driven threat detection represents a critical evolution, providing the tools to analyze vast datasets, identify subtle anomalies, and predict potential attacks with unprecedented speed and precision. It empowers security teams to gain a deeper understanding of their threat landscape, automate routine tasks, and focus human expertise on complex strategic challenges. This article delves into the core principles, benefits, applications, and considerations surrounding AI-driven threat detection, illustrating its pivotal role in building resilient digital defenses.</p>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <h2>Understanding AI-Driven Threat Detection</h2>

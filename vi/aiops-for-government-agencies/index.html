@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh chuyển đổi số mạnh mẽ, các cơ quan chính phủ đang phải đối mặt với áp lực ngày càng tăng trong việc quản lý và vận hành các hệ thống công nghệ thông tin (CNTT) phức tạp. Từ việc cung cấp dịch vụ công trực tuyến đến bảo vệ dữ liệu nhạy cảm của quốc gia, hiệu suất và độ tin cậy của hạ tầng CNTT là yếu tố then chốt. Đây là lúc AIOps (Artificial Intelligence for IT Operations) nổi lên như một giải pháp chiến lược, mang lại tiềm năng đáng kể để cách mạng hóa cách các cơ quan nhà nước quản lý hoạt động CNTT của mình.</p>
 <p>Bài viết này sẽ đi sâu vào cách AIOps có thể giúp các cơ quan chính phủ vượt qua những thách thức hiện tại, tối ưu hóa quy trình, tăng cường an ninh mạng và nâng cao chất lượng dịch vụ công.</p>
 <h2>Thách thức trong Vận hành CNTT của Cơ quan Chính phủ</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Các cơ quan chính phủ thường phải đối mặt với nhiều thách thức đặc thù trong quản lý CNTT, khác biệt so với khu vực tư nhân:</p>

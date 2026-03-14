@@ -170,6 +170,43 @@
     
     .prose h2 { font-size: 1.875rem; border-bottom: 2px solid var(--bg-alt); padding-bottom: 0.5rem; }
 
+    .affiliate-banner {
+      background: linear-gradient(180deg, #f0f7ff, #ffffff);
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 16px;
+      margin: 28px 0;
+    }
+
+    .affiliate-badge {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(37, 99, 235, 0.12);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .affiliate-banner h3 {
+      margin: 0 0 10px 0;
+      font-size: 1.25rem;
+    }
+
+    .affiliate-banner p {
+      margin: 0 0 16px 0;
+      font-size: 1rem;
+      color: var(--text-muted);
+    }
+
+    .affiliate-cta {
+      width: 100%;
+      text-align: center;
+    }
+
     footer { 
       background: var(--bg-alt);
       border-top: 1px solid var(--border);
@@ -225,6 +262,7 @@
     @media (max-width: 640px) {
       h1 { font-size: 2rem; }
       main { padding: 32px 0; }
+      .prose p { font-size: 1rem; }
     }
   </style>
 </head>
@@ -249,10 +287,11 @@
       <p>Trong bối cảnh công nghệ phát triển nhanh chóng, các hệ thống kỹ thuật số ngày càng trở nên phức tạp, từ hạ tầng CNTT, ứng dụng phần mềm đến các thiết bị IoT và quy trình sản xuất. Với sự phức tạp gia tăng này, việc giám sát hiệu suất và phát hiện sự cố trở thành một thách thức lớn. Các phương pháp cảnh báo truyền thống thường gặp phải tình trạng “mệt mỏi vì cảnh báo” (alert fatigue), khi quá nhiều thông báo không liên quan hoặc trùng lặp làm lu mờ những vấn đề thực sự nghiêm trọng.</p>
 <p>Đây chính là lúc các hệ thống cảnh báo thông minh tích hợp Trí tuệ Nhân tạo (AI) phát huy vai trò của mình. AI không chỉ giúp lọc nhiễu mà còn mang lại khả năng phân tích sâu sắc, dự đoán và tự động hóa, biến việc giám sát từ một nhiệm vụ phản ứng thành một quy trình chủ động và hiệu quả. Bài viết này sẽ đi sâu vào cách AI đang định hình tương lai của các hệ thống cảnh báo, mang lại những lợi ích vượt trội cho mọi tổ chức.</p>
 <h2>Hệ Thống Cảnh Báo Thông Minh Với AI Là Gì?</h2>
-<div class="affiliate-banner" style="background: #f8f9fa; border: 1px solid #dee2e6; padding: 20px; border-radius: 8px; margin: 20px 0; text-align: center;">
-    <h3>🚀 Tối ưu hóa vận hành với AIOps</h3>
-    <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất ngay hôm nay.</p>
-    <a href="YOUR_AFFILIATE_LINK_HERE" class="btn" style="background: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">Tìm hiểu thêm</a>
+<div class="affiliate-banner">
+  <div class="affiliate-badge">{{ "Gợi ý" }}</div>
+  <h3>Tối ưu hóa vận hành với AIOps</h3>
+  <p>Khám phá các công cụ AI hàng đầu giúp doanh nghiệp của bạn tự động hóa và tăng năng suất.</p>
+  <a href="YOUR_AFFILIATE_LINK_HERE" class="btn affiliate-cta">Tìm hiểu thêm</a>
 </div>
 
 <p>Hệ thống cảnh báo thông minh với AI là một giải pháp giám sát tiên tiến sử dụng các thuật toán học máy (Machine Learning) và trí tuệ nhân tạo để phân tích dữ liệu từ nhiều nguồn khác nhau. Mục tiêu chính là phát hiện các bất thường, dự đoán các sự cố tiềm ẩn và đưa ra các cảnh báo có giá trị, được ưu tiên, thay vì chỉ đơn thuần thông báo khi một ngưỡng định sẵn bị vượt qua.</p>
